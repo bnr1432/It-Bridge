@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function ShowDetails(){
+            var cityName = document.getElementById("cityname").value;
+            let output  = document.getElementById("output");
+
+            var d = new Date();
+            d.setDate(d.getDate() + 1);
+
+            document.cookie = "cname="+escape(cityName)+";expires="+d.toGMTString();
+
+            output.innerHTML = `<font color='green'> Your current city is :${cityName}`;
+                alert(`cookie set`);
+         }
+         function getCookie(name) {
+            if (document.cookie.length > 0) 
+            {
+                ind = document.cookie.indexOf(name);
+                if (ind != -1) {
+                    ind = ind + name.length + 1;
+                    ind1 = document.cookie.indexOf(";", ind);
+                         if (ind1 == -1) 
+                              ind1 = document.cookie.length;
+                    return unescape(document.cookie.substring(ind, ind1));
+                }
+            }
+            return "";
+        }
+
+        function CheckCookie(cookiename){
+            currentcity = getCookie(cookiename);
+            document.getElementById("cityname").value = currentcity;
+
+        }
+
+    </script>
+</head>
+<body onload="CheckCookie('cname')">
+
+    <form action="">
+        City Name: <input type="text" name="cityname" id="cityname">
+        <input type="button" value="ShowDetails" onclick="ShowDetails()">
+        <br><br>
+        <div id="output"></div>
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function AboutDetails(name, gender){
+
+            if(name == undefined){
+                alert(" Name is not given");
+                return 0;
+            }
+            if(gender == undefined){
+                alert(" Gender is not given :" + name);
+                return 0;
+            }
+            if(gender.toLowerCase() == "male"){
+                alert("Welcome MR." +name);
+            }else{
+                alert("Welcome Ms."+name);
+            }
+
+        }
+    </script>
+</head>
+<body>
+
+    <input type="button" value="Click ME" onclick="AboutDetails()">
+    
+</body>
+</html>

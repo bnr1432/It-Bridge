@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(data, name)
+        {
+            var today = new Date();
+            today.setDate(today.getDate() + 30)
+            document.cookie = "guestname=" + escape(name.value) + ";expires=" + today.toGMTString();
+            document.cookie = "grades=" + escape(data.value) + ";expires=" + today.toGMTString();
+            document.cookie = "grades= " + escape(saeed) + ";expires=" + today.toGMTString();
+            alert("Welcome : "+ data.value);
+        }
+
+        function readCookie(cookieName)
+        {
+            if(document.cookie.length > 0)
+            {
+                ind = document.cookie.indexOf(cookieName);
+                if(ind == -1)
+                {
+                    return "nocookiefoundwiththename" + cookieName ;
+                }
+                else
+                {
+                    ind = ind + cookieName.length + 1;
+                    ind1 = document.cookie.indexOf(";",ind);
+                    if(ind1 == -1)
+                    {
+                        ind1 = document.cookie.length;
+                    }
+                    alert(unescape(document.cookie.substring(ind, ind1)))
+                }
+            }
+            else
+            {
+                return "nocookiefound"
+            }
+        }
+    </script>
+</head>
+<body onload="readCookie('guestname')">
+    <form>
+        Guest Name :
+        <input type="text" name="guestName" id="guestName"><br><br>
+        Marks :
+        <input type="text" name="marks" id="marks" onblur="display(this,this.form.guestName)">
+    </form>
+</body>
+</html>

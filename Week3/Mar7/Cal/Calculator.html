@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div id="header">
+        <img src="icons8-calculator-32.png" alt="" >
+        <span> Calculator</span>
+        <img src="icons8-minimize-window-32.png" alt=""  >
+        <img src="icons8-maximize-window-32.png" alt="" >
+        <img src="icons8-close-window-32.png" alt="" >   
+        </div>
+        <h2>Standard</h2>
+        <input type="text" class="display" value="0" readonly>
+
+        <!-- value Buttons -->
+        <div class="value-row">
+            <button  type="submit"class="value-btn">MC</button>
+            <button type="submit" class="value-btn">MR</button>
+            <button type="submit" class="value-btn">M+</button>
+            <button type="submit" class="value-btn">M-</button>
+            <button type="submit" class="value-btn">MS</button>
+            <button type="submit" class="value-btn">Mv</button>
+        </div>
+
+        <!-- Calculator Buttons -->
+        <div class="button-grid">
+            <button type="submit" >%</button>
+            <button type="submit">CE</button>
+            <button type="submit">C</button>
+            <button id="operator">⌫</button>
+
+            <button type="submit">1/x</button>
+            <button type="submit">x²</button>
+            <button type="submit">²√x</button>
+            <button type="submit" id="operator">/</button>
+
+            <button type="submit">7</button>
+            <button type="submit">8</button>
+            <button type="submit">9</button>
+            <button type="submit" id="operator">×</button>
+
+            <button type="submit">4</button>
+            <button type="submit">5</button>
+            <button type="submit">6</button>
+            <button  type="submit"id="operator">-</button>
+
+            <button type="submit">1</button>
+            <button type="submit">2</button>
+            <button  type="submit">3</button>
+            <button type="submit" id="operator">+</button>
+
+            <button type="submit">+/-</button>
+            <button type="submit">0</button>
+            <button type="submit">.</button>
+            <button  type="submit" id="operator equal">=</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

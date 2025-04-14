@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+        count = 0;
+        function Process(name){
+            count++;
+            var m_ans = document.getElementById('result');
+            m_ans.innerHTML = `<h2>Process is ${name}called ${count} times</h2>`
+
+        }
+    </Script>
+</head>
+<body>
+
+    <!-- Account Number : <input type="text" name="accountNumber"
+     id="accountNumber" 
+     onkeypress="Process('press')"
+     onkeydown="Process('down')"
+     onkeyup="Process('up')"
+     > -->
+
+     Account Number : <input type="text" name="accountNumber"
+     id="accountNumber" 
+     onchange="Process('Changes called')"
+     >
+    <div id="result"></div>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Customer(m_id,m_name,m_bill){
+            this.c_id = m_id;
+            this.c_name = m_name;
+            this.c_bill = m_bill;
+            // alert("Customer Name:"+ m_name);
+        }
+        function display1(){
+            customer1 = new Customer(1011,"Nagarjuna",240);
+            alert(customer1.c_id + ' ' + customer1.c_name +  ' ' + customer1.c_bill);
+        }
+        function display2(){
+            customer2 = new Customer(1201,"Reddy",221);
+            alert(customer1.c_id + ' ' + customer1.c_name +  ' ' + customer1.c_bill);
+
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="display1" onclick="display1()">
+
+    <input type="button" value="display1" onclick="display2()">
+
+</body>
+</html>

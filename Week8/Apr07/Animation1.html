@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            animation-name: coloranime ;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-delay: 0s;
+            animation-iteration-count: 8;
+            animation-direction: alternate;
+            animation-play-state: running;
+            
+
+        }
+        @keyframes coloranime {
+          0% {background-color: pink;
+          left: 0px;
+          top: 0px;
+            }
+            25% {background-color: yellow;
+           left: 400px;
+           top: 0px;
+            }   
+            50% {background-color: green;
+           left: 400px;
+           top: 200px;
+            }
+            75%{
+                background-color: orange;
+                left: 0px;
+                top: 200px;
+            }
+            100% {background-color: blue;
+                width: 0px;
+                height: 0px;
+            }
+        }
+        /* div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation: coloranime 8s;
+        }
+        @keyframes coloranime {
+            0% {background-color: pink;
+            height: 400px;
+            }
+            25% {background-color: yellow;
+            height: 300px;
+            }   
+            50% {background-color: green;
+            height: 200px;
+            }
+            100% {background-color: blue;
+                height: 100px;
+            }   
+    } */
+
+    </style>
+</head>
+<body>
+    <div> <img src="./../../Week7/Apr04/image.png" alt="" height="100px" width="100px">
+    </div>
+
+    
+</body>
+</html>

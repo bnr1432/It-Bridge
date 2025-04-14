@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    const display=() => 
+    {
+    let num1=document.getElementById("num1").value
+    let num2=documents.getElementById("num2").value
+    let divide=num1/num2
+    document.getElementById('result').innerHTML=`<font color=green> Result of ${num2} divide by ${num1} is:${divide} `
+    document.getElementById('output').innerHTML=`<font color=blue>Thank you for using the division function`
+   }
+   function callMe()
+       {
+        try{
+            display()
+        }
+        catch(err){
+            //alert("Error encounted:" +err)
+            alert("name :" +err.name +"\nMessage : " +err.message)
+        }
+       }
+</script>
+<body>
+Number1 :<input type="number" name="num1" id="num1"></br>
+Number2 :<input type="number" name="num2" id="num2"></br>
+    <input type="button" value="Division" onclick="callMe()"></br><div id="result"></div>
+    <div id="output"></div>
+</body>
+</html>

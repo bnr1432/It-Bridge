@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Add" onclick="CalculatorEMI(100000,12,30)"><br>
+    <input type="button" value="Div" onclick="CalculatorEMI(100000,12,120)"><br>
+    <!-- <input type="button" value="Mul" onclick="CalculatorEMI(7,4,'Mul')"><br> -->
+
+    <script>
+
+        function CalculatorEMI(Month, Rate, Tenure){
+
+            let emi = [Month * Rate * (1+Rate)^Tenure / (1+Rate) ^ Tenure -1] ;
+
+            alert("Emi is :" + emi);
+
+        }
+    </script>
+    
+</body>
+</html>

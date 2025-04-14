@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    
+        form {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+    
+        label,
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    
+        input[type="submit"] {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+    
+        input[type="submit"]:hover {
+            background: #218838;
+        }
+    </style> 
+
+    <script>
+        class Stocks {
+            constructor(m_id,m_date, m_item_name, m_quantity) {
+                this.orderId = m_id;
+                this.orderDate = m_date;
+                this.itemName = m_item_name;
+                this.quantity = m_quantity;
+            }
+                CheckStatus(){
+                    if(this.quantity < 0){
+                    return this.itemName+ "  " + "Out Of Stock";
+                    }
+                    else{
+                    return "In Stock";
+                    }
+            }
+                CalculateBill(){
+                    var total_Price = 100 * this.quantity;
+                    if(total_Price > 0){
+                    return "Your " + "  " + this.itemName + "   " + " Order Successfully Placed. Yout Order amount " + total_Price;
+                    }
+                    else{
+                        return this.itemName + "  " + " Your Order Not Placed Please Try Again. Your Order Amout is " + total_Price;
+                    }
+                }
+        
+        }
+        function DisplayStock() {
+                var orderId = document.getElementById('orderId').value;
+                var orderDate = document.getElementById('orderDate').value;
+                var itemName = document.getElementById('itemName').value;
+                var quantity = document.getElementById('quantity').value;
+        
+                var stock = document.getElementById('stockStatus');
+                var bill = document.getElementById('bill');
+        
+                stock1 = new Stocks(orderId, orderDate, itemName, quantity);
+        
+                stock.innerHTML = '<font color=red>' + stock1.CheckStatus();
+                bill.innerHTML = '<font color=green>' + stock1.CalculateBill();
+        
+        
+            }
+    </script>
+</head>
+<body>
+        
+    <form action="#" method="get" >
+        <label for="orderId">order ID:</label>
+        <input type="text" id="orderId" name="orderId" required>
+
+        <label for="orderDate">Order Date :</label>
+        <input type="date" id="orderDate" name="orderDate" required>
+
+        <label for="itemName">item Name:</label>
+        <input type="text" id="itemName" name="itemName" step="0.01" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" required>
+
+        <input type="button" value="Buy" onclick="DisplayStock()">
+
+        <div id="stockStatus"></div>
+        <div id="bill"></div>
+    </form>
+
+    
+</body>
+</html>

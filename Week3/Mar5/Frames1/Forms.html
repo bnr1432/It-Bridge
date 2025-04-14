@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h2 align="center">Login Form</h2>
+
+    <form method="get" novalidate>
+
+        <table bgcolor="green" align="center" cellspacing="10" cellpadding="10">
+            <tr>
+                <td><label for="name">Last Name:</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="email" id="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="pwd">password:</label></td>
+                <td><input type="password" name="pwd" id="pwd"></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gender" id="" value="Male">Male
+                    <input type="radio" name="gender" id="" value="Female">Female
+                    <input type="radio" name="gender" id="" value="Others">Others
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Card">Id Proof:</label>
+                </td>
+                <td align="center">
+                    <input type="checkbox" name="aadhar" id="Card" value="Aadhar">Aadhar Card
+                    <input type="checkbox" name="voterid" id="Card" value="VoterID">VoterID
+                    <input type="checkbox" name="passport" id="Card" value="Passport">Passport
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="role">Role</label></td>
+                <td>
+                    <select name="role" id="">
+                        <option value="none " selected disabled hidden>Select an option</option>
+                        <option value="Developer">Developer</option>
+                        <option value="Tester">Tester</option>
+                        <option value="Supporter">Supporter</option>
+                    </select>
+                </td>
+
+            </tr>
+            <tr>
+               <td><label for="address">address:</label></td>
+               <td><textarea id="address" rows="2"></textarea></td>
+            </tr>
+
+            <tr>
+                <td align="center"><input type="submit" value="Submit"></td>
+                <td align="center"><input type="reset" value="Reset"></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

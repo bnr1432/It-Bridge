@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script>
+            function ChangeName(){
+                let m_pincode =Number(document.getElementById('Pincode').value);
+                let m_district = document.getElementById('District');
+                let m_state = document.getElementById('State');
+
+                if(m_pincode === 560029){
+                    m_district.value = "Bangalore";
+                    m_state.value = "Karnataka";
+                }
+                else if(m_pincode === 500011){
+                    m_district.value = "Hyderabad";
+                    m_state.value = "Telagana";
+
+                }
+                else{
+                    alert(`Please Enter Valid Details`);
+                }
+            }
+        </script>
+</head>
+<body>
+
+    <form action="">
+
+        Pincode :  <input type="text" name="Pincode" id="Pincode"><br>
+        District :  <input type="text" name="District" id="District"><br>
+        State :<input type="text" name="State" id="State"><br>
+        <input type="button" value="Click" onclick="ChangeName()">
+
+    </form>
+    
+</body>
+</html>

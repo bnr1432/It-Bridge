@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fillDetails(){
+            let pName = document.getElementById("productname");
+            pName.value = "Pen Drive";
+
+            let m_price = document.getElementById("price").value;
+            let m_quantity = document.getElementById("Quantity").value;
+
+            let m_result = document.getElementById("result");
+
+            let m_p1 = document.getElementById("p1");
+            let m_q1 = document.getElementById("q1");
+            if(m_price < 0){
+                m_p1.innerHTML = "Please enter postive Number"
+            }
+            else if(m_quantity < 0){
+                m_q1.innerHTML = "Please enter Postive Number"
+            }
+            else{
+                m_result.innerHTML = `Total Price : ${Number(m_price * m_quantity)}`
+            }
+
+        }
+    </script>
+</head>
+<body onload="fillDetails()">
+
+    <form action="">
+
+    Product Name: <input type="text" name="productname" id="productname"><br>
+    Price : <input type="number" name="price" id="price"><span id="p1"></span><br>
+    Quantity : <input type="number" name="Quantity" id="Quantity"><span id="q1"></span><br>
+    <input type="button" value="Total Price" onclick="fillDetails()">
+    </form>
+    <div id="result"></div>
+</body>
+</html>

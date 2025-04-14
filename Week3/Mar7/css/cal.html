@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        table {
+            background-color: white;
+        }
+
+        button {
+            font-family: Tahoma, Verdana, sans-serif;
+            width: 90px;
+            padding: 20px 15px;
+            background-color: white;
+            font-size: 17px;
+            border-radius: 5px;
+        }
+
+        #space {
+            padding: 20px 10px;
+            width: 350px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        #mequal {
+            background-color: blue;
+        }
+
+        #mequal:hover {
+            background-color: darkblue;
+        }
+    </style>
+
+    <script>
+        let currentInput = "";
+
+        function addToDisplay(value) {
+            currentInput += value;
+            document.getElementById("space").value = currentInput;
+        }
+
+        function clearDisplay() {
+            currentInput = "";
+            document.getElementById("space").value = "";
+        }
+
+        function calculate() {
+            try {
+                currentInput = eval(currentInput);
+                document.getElementById("space").value = currentInput;
+            } catch (e) {
+                document.getElementById("space").value = "Error";
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <form method="get" onsubmit="return false;">
+        <table border="0">
+
+            <tr>
+                <td>
+                    <h3>Calculator</h3>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="space" name="display" readonly>
+                </td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="clearDisplay()">C</button></td>
+                <td><button type="button" onclick="addToDisplay('/')">/</button></td>
+                <td><button type="button" onclick="addToDisplay('*')">×</button></td>
+                <td><button type="button" onclick="addToDisplay('-')">-</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="addToDisplay('7')">7</button></td>
+                <td><button type="button" onclick="addToDisplay('8')">8</button></td>
+                <td><button type="button" onclick="addToDisplay('9')">9</button></td>
+                <td rowspan="2"><button type="button" onclick="addToDisplay('+')">+</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="addToDisplay('4')">4</button></td>
+                <td><button type="button" onclick="addToDisplay('5')">5</button></td>
+                <td><button type="button" onclick="addToDisplay('6')">6</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="addToDisplay('1')">1</button></td>
+                <td><button type="button" onclick="addToDisplay('2')">2</button></td>
+                <td><button type="button" onclick="addToDisplay('3')">3</button></td>
+                <td rowspan="2"><button type="button" id="mequal" onclick="calculate()">=</button></td>
+            </tr>
+
+            <tr>
+                <td><button type="button" onclick="addToDisplay('0')">0</button></td>
+                <td><button type="button" onclick="addToDisplay('.')">.</button></td>
+                <td><button type="button" onclick="addToDisplay('%')">%</button></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>

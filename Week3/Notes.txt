@@ -1,0 +1,269 @@
+                                                    ---03-03-25---
+HTML --
+What is markup language?
+why it is called markup language
+we all know hyper text it means hyper link 
+
+what is tag?
+it is something we write in <> sings
+the tag tells a web browser to display the text
+
+HTML tags are case insensitive.
+
+Save file using "" like "home.html"
+
+Browser interprets the HTML and ignores the errors in the html
+
+Empty tag:
+Tag that does not have an end tag.
+
+Container tag:
+Tag will start with <> and close </>.
+
+Comments: 
+<!-- /// -->
+<!-- something write here -->
+
+Block level tags: Block level elements it will start on new line
+Inline level tags: Inline level elements never begin on new lines
+
+Attributes:
+Inside tag we write color, size, face etc .
+face is also used to for font style.
+it will work on html4 not in hmtl5
+
+IDE: Intergrated Development Environment
+
+
+Hyperlink:
+<a href=""
+Intra page Hyperlink
+<a name=""
+
+img:
+usemap: The usemap attribute is added to the <img> tag and links it to a <map> element.
+The <map> element contains one or more <area> tags, each defining a clickable region within the image.
+
+                                                    ---04-03-25---
+
+Table:
+collection of rows and columns,
+cellspacing means - space between two cells.
+cellpadding means - space between inside the cell.
+rowspan - It means add two cell data to one cell.
+valign -  It used to add the text wherever you want.
+
+Forms:
+Form tag is used to create controls on the page.
+&nbsp; - used to give space in html 
+
+frameset:
+The <frameset> element in HTML was used to divide a web page into multiple sections or frames
+
+
+                                                    ---05-03-25---
+Frames1:  
+         __________________
+        |__________________|
+        |    |             | 
+        |    |             | 
+        |    |_____________|
+        |____|_____________|
+
+
+Frames
+ex1: 
+         __________________
+        |        |_________|              
+        |        |_________|              
+        |        |_________|             
+        |________|_________|            
+
+Div Tag:
+It is Block level element
+Takes the full width available by default.
+
+Span Tag:
+It is Inline level element
+Does not start on a new line and only takes as much width as its content.
+
+non semantic tags: div and Span
+
+semantic tags:
+A semantic element clearly describes its meaning to both. 
+semantic tagging is for machine not for humans
+Header
+Footer
+main
+article
+figure
+figcaption
+nav
+section
+
+command - for Beautify  code --Shift + Alt + F
+
+Task: hmtl5
+        _________________
+       |_________________|
+       |_________________|
+       |         |       |
+       |_________|       |
+       |         |       |
+       |_________|_______|
+       |_________________|
+
+Use- Frameset and , Header, nav, section, article, aside, Footer
+
+
+
+Forms:
+vaildation
+need required
+autocomplete =off
+autofocus - it means to focus particular filed ex: when we open webiste it show fill the details which one you selected
+formaction - to submit the data to that form
+
+
+ 
+                                                    ---06-03-25---
+novalidate - attribute is a boolean attribute
+formnovalidate- No need to write anything in fields
+Disabled - we cannot take focus
+         - The value of a disabled field is not submitted with the form.
+         - When you want to prevent user interaction with a form element based on a condition, like disabling a submit button until all fields are filled.
+
+readonly - 
+         - When you want to display data that users should see but not change, like a username or calculated values that need to be submitted.
+
+multiple - we can multiple email id at one fields ex: abc@gmail.com,ssd@gmail.com
+
+oninput - The oninput attribute in HTML is an event handler that triggers a JavaScript function or code every time the value of an input element changes.
+
+audio/video:
+
+autoplay - 
+controls -
+loop  - 
+muted - 
+
+CSS - Cascading style sheet
+
+        There are three main ways to include CSS:
+
+Inline CSS:-
+Definition: CSS styles are applied directly to HTML elements using the style attribute.
+Best For: Quick, one-time styles or testing.
+Drawback: Not reusable and makes the HTML cluttered.
+Ex:-
+<h1 style="color: blue; font-size: 24px;">Welcome to My Website!</h1>
+
+Internal CSS (Embedded CSS):-
+Definition: CSS is included within the <style> tag inside the <head> section of the HTML document.
+Best For: Styling a single HTML page.
+Drawback: Cannot be reused across multiple pages.
+Ex:-
+<head>
+    <title>Internal CSS Example</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+
+External CSS:-
+Definition: CSS is written in a separate .css file, which is linked to HTML using the <link> tag.
+Best For: Large websites with multiple pages.
+Drawback: Requires an additional file but keeps HTML clean and reusable.
+
+Ex:-
+<head>
+    <title>External CSS Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+style.css
+body {
+    background-color: #f0f0f0;
+}
+h1 {
+    color: red;
+}
+
+Note : we can use custom tag also in html and also we can apply css to that tag also.
+custom tag is not predefined tag user can create own tag.
+ex:
+<high> hello</high>
+
+high{
+        color: white;
+}
+
+text-align -
+text-indent - 
+text-decoration - 
+text-transform - all letter will be captialize ,uppercase,lowercase
+font-family -
+font-style - 
+font-size -
+background-image - 
+background-repeat - 
+
+Rule in anchor tag:
+a:visted
+a:link
+a:hover
+
+C:\Nagii Files\IT Bridge\Week3\Mar6\Links\link.html -copy path
+Week3\Mar6\Links\link.html --relavtive path
+
+                                                    ---07-03-25---
+
+list-style-image:url(''); - to use bullet images
+We can give two tags at same time use css
+
+External Css : Maintainance
+Help us in reusing the style in other HTML Files
+The benfit is we can reuse that css file
+
+ ---CSS Selectors--- 
+COMMAND	                                    DESCRIPTION	                                                       SYNTAX
+
+UNIVERSAL SELECTOR	                The CSS universal selector (*) matches elements of any type.                 {}
+                                    When utilising @namespace, universal selectors
+                                    can be namespaced.	
+
+ID SELECTOR	                        The CSS ID selector matches an element based on the value of                 #id {}
+                                    the element’s id attribute. This is what you'd use to refer 
+                                    to that one-of-a-kind element with an id.	
+
+CLASS SELECTOR	                    The CSS class selector matches elements based on the contents               .class {}
+                                    of their class. 	
+
+TYPE SELECTOR	                    It selects all elements of the given type within a document.                h1, h2 ,h3 {}
+                                    In other words, the type selector in CSS matches components 
+                                    based on their node names.	
+
+ADJACENT SIBLING SELECTOR	        The adjacent sibling combinator (+) separates two selectors.                 h1 + p {}
+                                    It comes right after the first element, and they're both children  
+                                    of the same parent.	
+
+CHILD SELECTOR	                    The child combinator (>) is placed between two CSS selectors.	            ul > li {}
+
+GENERAL SIBLING SELECTOR	        Select all elements that follow the first element such that both            h1 ~ p {}
+                                    are children of the same parent.
+
+DESCENDANT SELECTOR	                Any selector with white space between two selectors without a               p a {}
+                                    combinator.	
+
+Declarations:
+
+    h1{ color : blue; font-style : 20px;}
+     |    |       |       |          |
+Selector  |       |       |          |
+     Property    value   Property    value
+                     

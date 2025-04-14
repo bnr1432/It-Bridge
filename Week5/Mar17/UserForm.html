@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function CheckName(){
+
+            let m_name = document.getElementById("name");
+
+            if (m_name === "" || !isNaN(m_name)) {
+                document.getElementById("result").innerHTML = "<font color='red'>Please enter a valid Name</font>";
+            } else {
+                document.getElementById("result").innerHTML = `<h3>${m_name}</h3>`
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+            Name : <input type="text" name="name" id="name" ><br>
+            Catergory : <br>
+            <input type="radio" name="catergory" value="OBC" id="catergory">OBC <br>
+            <input type="radio" name="catergory" value="SC" id="catergory">SC <br>
+            <input type="radio" name="catergory" value="ST" id="catergory">ST <br>
+            <input type="radio" name="catergory" value="General" id="catergory">General <br>
+            <input type="button" value="Go" onclick="CheckName()">
+
+            <div id="result"></div>
+    </form>
+    
+</body>
+</html>

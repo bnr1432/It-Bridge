@@ -1,0 +1,111 @@
+===============================================================
+
+Actvity 1: 
+create customerdb.json for the below code ::
+
+
+http://localhost:8060/customer
+
+
+
+[
+  {
+    "customerId": 1,
+    "customerName": "Alice Johnson",
+    "mobileNumber": "9876543210",
+    "billAmount": 120.50
+  },
+  {
+    "customerId": 2,
+    "customerName": "Bob Smith",
+    "mobileNumber": "8765432109",
+    "billAmount": 85.00
+  },
+  {
+    "customerId": 3,
+    "customerName": "Charlie Brown",
+    "mobileNumber": "7654321098",
+    "billAmount": 230.75
+  },
+  {
+    "customerId": 4,
+    "customerName": "Diana Prince",
+    "mobileNumber": "6543210987",
+    "billAmount": 99.99
+  },
+  {
+    "customerId": 5,
+    "customerName": "Ethan Hunt",
+    "mobileNumber": "5432109876",
+    "billAmount": 150.00
+  },
+  {
+    "customerId": 6,
+    "customerName": "Fiona Gallagher",
+    "mobileNumber": "4321098765",
+    "billAmount": 110.25
+  },
+  {
+    "customerId": 7,
+    "customerName": "George Bailey",
+    "mobileNumber": "3210987654",
+    "billAmount": 45.30
+  },
+  {
+    "customerId": 8,
+    "customerName": "Hannah Montana",
+    "mobileNumber": "2109876543",
+    "billAmount": 300.00
+  },
+  {
+    "customerId": 9,
+    "customerName": "Ian Malcolm",
+    "mobileNumber": "1098765432",
+    "billAmount": 75.75
+  },
+  {
+    "customerId": 10,
+    "customerName": "Jane Doe",
+    "mobileNumber": "9988776655",
+    "billAmount": 200.00
+  }
+]
+
+Activity 2: (pending)
+
+var express = require("express");
+var customerapp = express();
+var fsp = require('fs/promises');
+
+customerapp.use(express.json());
+customerapp.use(express.urlencoded());
+async function readCustomer() {
+    data = await fsp.readFile('customerDB.json', 'utf8')
+    return data
+}
+customerapp.get('/customer', async function (req, res) {
+    const data = await readCustomer()
+    res.send(data)
+})
+customerapp.get("/customer/displayCustomerName",
+    function (request, response) {
+		//display only customer names
+    })
+
+
+
+Acivity 3 : Create a node js program to achieve the below requirements :
+
+Create a folder called views dynamically and create a file called about.html into it.
+Add some simple HTML content dynamically to the file and save it.
+Then read the contents from the file and print the contents from the HTML file to the console window. 
+
+Send the solution and other activites solution : zip and email to saeed by monday morning
+
+
+
+
+
+
+
+

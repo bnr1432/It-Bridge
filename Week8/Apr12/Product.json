@@ -1,0 +1,34 @@
+{
+    "product": [
+      {
+        "productId": "12",
+        "productName": "Printer",
+        "quantityOnHand": "12",
+        "price": "12"
+      },
+      {
+        "productId": "20",
+        "productName": "WaterBottle",
+        "quantityOnHand": 1,
+        "price": 12
+      },
+      {
+        "productId": "91817",
+        "productName": "Lakme",
+        "quantityOnHand": "199",
+        "price": "20"
+      },
+      {
+        "productId": "121",
+        "productName": "Olay",
+        "quantityOnHand": "12",
+        "price": "12"
+      },
+      {
+        "productId": "816252",
+        "price": "999",
+        "quantityOnHand": "112122",
+        "productName": "Gariner"
+      }
+    ]
+  }

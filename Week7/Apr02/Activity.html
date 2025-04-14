@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Custom Object</title>
+    <script>
+        class Product {
+            constructor(productId, productName, price) {
+            this.productId = productId;
+            this.productName = productName;
+            this.price = price;
+            }
+        displayProductInfo() {
+            return `Product ID: ${this.productId}, Product Name: ${this.productName}, Price: ₹${this.price}`;
+        }
+    }
+
+    function showProductInfo() {
+        const product = new Product(101, "Smartphone", 15000);
+        document.getElementById("productInfo").innerText = product.displayProductInfo();
+    }
+
+    </script>
+</head>
+<body>
+    <h1>Product Information</h1>
+    <button onclick="showProductInfo()">Show Product Info</button>
+    <div id="productInfo" style="margin-top: 10px;"></div>
+</body>
+</html>

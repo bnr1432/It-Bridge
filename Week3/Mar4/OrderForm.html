@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="brown" text="white" >
+    <h2 align="center">Order Form</h2>
+
+    <form action="" >
+        <table align="center" cellspacing="20" cellpadding="5">
+            <tr>
+                <td><label for="name">First Name</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="sname">Second Name</label></td>
+                <td><input type="text" name="name" id="sname"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type="radio" name="gender" id="" value="Male">Male
+                    <input type="radio" name="gender" id="" value="Female">Female
+                    <input type="radio" name="gender" id="" value="Others">Others
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Address</label></td>
+                <td><textarea id="address" rows="2"></textarea></td>
+             </tr>
+             <tr>
+                <td><label for="type">Membership Type</label></td>
+                <td>
+                    <select name="role" id="">
+                        <option value="none " selected disabled hidden>-Select Membership-</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Plus">Plus</option>
+                        <option value="premium">premium</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th><td>Select Product List</td></th>
+            </tr>
+            <tr>
+                    <td>Product Name</td>
+                    <td >Price</td>
+                    <td>Quantity</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Coffe Maker</label>
+                    <input type="checkbox" name="Coffe Maker" id="pname" value="Coffe Maker">
+                </td>
+                <td>300.25</td>
+                 <td><input type="number" name="" id="" value="0"></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Gourmet Beans</label>
+                    <input type="checkbox" name="Beans" id="pname" value="Gourmet Beans" checked>
+                </td>
+                <td>100.15</td>
+                <td><input type="number" name="" id="" value="0"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Coffe Filter</label>
+                    <input type="checkbox" name="Coffe Filter" id="pname" value="Coffe Filter" checked>
+                </td>
+                <td>125.85</td>
+                <td><input type="number" name="" id="" value="3"></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="">Cups and Mugs</label>
+                    <input type="checkbox" name="Cups and Mugs" id="pname" value="Cups and Mugs">
+                </td>
+                <td>50.90</td>
+                <td><input type="number" name="" id="" value="0"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="4"><input type="submit" value="Submit"></td>
+            </tr>
+
+        </table>
+    </form>
+    
+</body>
+</html>

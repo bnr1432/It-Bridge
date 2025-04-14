@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Card Number Input</title>
+    <script>
+        function Check(data) {
+            const regex = /^[A-Z]{5}[0-9]{4}[A-Z]{1}$/; // Correct PAN regex format
+            const output = document.getElementById('output');
+
+            if (!regex.test(data.value)) {
+                output.innerHTML = "<font color='red'>Invalid PAN Number</font>";
+            } else {
+                output.innerHTML = "<font color='green'>Valid PAN Number</font>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Enter PAN Number:</h2>
+    <input type="text" placeholder="ABCDE1234F" onkeyup="Check(this)">
+    <br><br>
+    <div id="output"></div>
+</body>
+</html>

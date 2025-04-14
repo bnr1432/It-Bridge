@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let DisplayName = (m_name) =>{
+
+            let get_char = m_name.value.charAt(0);
+
+            document.getElementById('result').innerHTML = get_char;
+            
+        }
+
+    </script>
+</head>
+<body>
+
+    <form action="">
+      Name: <input type="text" name="Name" id="name" onchange="DisplayName(this)">
+    </form>
+    <div id="result"></div>
+    
+</body>
+</html>

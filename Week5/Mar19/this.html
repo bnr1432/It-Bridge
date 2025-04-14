@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function AddTwoNumber(num1, num2){
+            let addNumbers = document.getElementById("result");
+            addNumbers.innerHTML = Number(num1.value) + Number(num2.value);
+        }
+    </script>
+</head>
+<body>
+
+    <form action="">
+        Number1 : <input type="text" name="num1" id="num1" onchange="AddTwoNumber( this, this.form.num2)"><br>
+        Number 2 : <input type="text" name="num2" id="num2" onchange="AddTwoNumber(this.form.num1 , this)"><br>
+    </form>
+    <div id="result"></div>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function OpenEyes(){
+            document.images[2].src = "Open.png";
+        }
+        function CloseEye(){
+            document.images[0].src = "Close.png";
+        }
+    </script>
+</head>
+<body>
+    <img src="Open.png" height="300" width="300" onmouseover="CloseEye()" onmouseleave="OpenEyes()">
+    <img src="CartoonB.png" alt=""  height="300" width="300">
+    <img src="CartoonG.png" alt=""  height="300" width="300">
+    
+</body>
+</html>

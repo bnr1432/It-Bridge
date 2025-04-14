@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Demo</title>
+    <style>
+        input { margin-bottom: 10px; padding: 5px; }
+        #message { color: red; }
+    </style>
+</head>
+<body>
+
+    <h2>JavaScript Event Demo</h2>
+
+    <input type="text" id="name" placeholder="Enter your name"
+           onfocus="showHint()" 
+           onblur="validateName()" 
+           oninput="updateName()">
+    <span id="message"></span>
+    <br>
+
+    <button onclick="greetUser()">Click Me!</button>
+
+    <script>
+        function showHint() {
+            document.getElementById("message").innerText = "Start typing your name...";
+        }
+
+        function validateName() {
+            const name = document.getElementById("name").value;
+            if (name.trim() === "") {
+                document.getElementById("message").innerText = "Name can't be empty!";
+            } else {
+                document.getElementById("message").innerText = "Looks good!";
+            }
+        }
+
+        function updateName() {
+            const name = document.getElementById("name").value;
+            document.getElementById("message").innerText = `You're typing: ${name}`;
+        }
+
+        function greetUser() {
+            const name = document.getElementById("name").value;
+            if (name.trim() !== "") {
+                alert(`Hello, ${name}! 👋`);
+            } else {
+                alert("Please enter your name first!");
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function display(){
+            var today = new Date();
+            var dob = new Date(2025,2,31);
+
+            // To calaculate year
+            // age = today - dob;
+            // var year = 1000 * 60 * 60 * 24 * 365;
+
+            days = dob - today;
+
+            leftdays = 1000* 60 * 60 * 24 ;
+
+            alert(` Total dasy are left: ${Math.floor(days/leftdays)}`);
+
+            // alert(`Your age is : ${Math.floor(age/year)}`)
+        }
+        display();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

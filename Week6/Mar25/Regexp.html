@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //  function display()
+        // {
+        //     const str="TUFAIL12ai";
+        //     const regex = /[\D\s]/g;  //Find digit
+        //     const demo = /ai/i   //Find Case insensitive
+        //     //alert(str.search(regex));  //4
+        //     alert(str.search(demo));
+        //     alert(str.search(regex));
+
+        // }
+        function Check(data){
+
+            // const regex = /\b([a-d]){3}/; 
+            // result = regex.exec(data.value);
+            // if(result == null){
+            //     alert("Invalid...Please enter any char")
+            // }else{
+            //     alert("Valid Details Entered")
+            // }
+
+            const regex = /[^\D\s]/g;
+            const lastcharacter = data.value.charAt(data.value.length -1);
+            result = lastcharacter.search(regex);
+            // result = data.value.search(regex);
+            if(result == -1){
+                alert("Enter Only digit");
+                data.value = data.value.substring(0,data.value.length-1)
+            }
+        }
+    </script>
+</head>
+<body>
+    Mobile Number: <input type="text" name="" id="" onkeyup="Check(this)">
+    
+</body>
+</html>

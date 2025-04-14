@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectricityBill</title>
+    <script>
+        function ElectricityBill(){
+            let m_bill = Number(prompt("Please Enter Bill Number It Should Contain 8 Characters  : "));
+            let m_amount = Number(prompt("Please Enter Amount : "));
+
+            let m_current_date = new Date();
+            let m_day = m_current_date.getDate();
+
+            if(5 >= m_day && m_bill.toString().length == 8 && m_amount >0){
+                let m_card_number = Number(prompt("Please Enter Credit Card Number It Should be contain between 8 to 16 : ")); 
+                if(m_card_number.toString().length >= 8 && m_card_number.toString().length <=16){
+                alert(`Your bill is: ${m_day}, you piad on time: ${m_amount}`)
+                }
+            }
+            else if(5 <= m_day && m_bill.toString().length == 8 && m_amount > 0){
+               var m_final_days = m_day - 5;
+               var m_result =  m_amount + m_final_days * 50 ;
+               let m_card_number = Number(prompt("Please Enter Credit Card Number It Should be contain between 8 to 16 : "));
+            if(m_card_number.toString().length >= 8 && m_card_number.toString().length <=16){
+            alert(`Your late days are ${m_final_days} , Your total bill after late fee is : ${m_result}`)
+                }
+            }
+            else{
+                alert(`Please enter valid details like amount should be positive and bill Number also`)
+                
+            }
+
+        }
+        ElectricityBill();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

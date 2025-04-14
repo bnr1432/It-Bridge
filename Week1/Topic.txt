@@ -1,0 +1,72 @@
+----17/02/25---
+Technical Independent on your skills
+
+Organ Donation Website
+
+
+---18/02/25---
+Manage Requirements - Map of Territory
+
+    Needs
+     |
+    Feeatures
+     |
+    Software Requirements
+     | 
+    Tests  -- Design
+
+What is Project Management?
+A body of knowledge that enables through usage of techniques, tools and principles.
+Management of 
+Planning of
+Executing of
+Monitoring of
+Controlling of 
+    Project Scope 
+    Project Time
+    Project cost
+    Project quality
+    Project Human Resources
+    Project Communication
+    Project risk
+ There 35 elements are to Manage
+
+Note:
+ Need to take process
+ Ambugity - two faces
+
+Most of these are failure in Requirements documents
+ mostly
+ rarely
+ usually
+ often
+ non mostly
+ un-usually
+
+from customer we need to ask their needs not their Requirements.
+
+---19/02/25---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

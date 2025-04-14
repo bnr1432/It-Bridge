@@ -1,0 +1,1012 @@
+----17/02/25---
+Technical Independent on your skills
+
+Organ Donation Website
+
+
+---18/02/25---
+Manage Requirements - Map of Territory
+
+    Needs
+     |
+    Feeatures
+     |
+    Software Requirements
+     | 
+    Tests  -- Design
+
+What is Project Management?
+A body of knowledge that enables through usage of techniques, tools and principles.
+Management of 
+Planning of
+Executing of
+Monitoring of
+Controlling of 
+    Project Scope 
+    Project Time
+    Project cost
+    Project quality
+    Project Human Resources
+    Project Communication
+    Project risk
+ There 35 elements are to Manage
+
+Note:
+ Need to take process
+ Ambugity - two faces
+
+Most of these are failure in Requirements documents
+ mostly
+ rarely
+ usually
+ often
+ non mostly
+ un-usually
+
+from customer we need to ask their needs not their Requirements.
+
+---19/02/25---
+
+
+----24-02-25---
+
+
+---25-02-25---
+
+---26-02-25---
+
+
+
+---27-02-25---
+
+
+
+---28-02-25---
+Learned about Email Etiqute
+Formal Email and Informal Email
+Basic of API
+
+---29-02-25---
+
+
+---03-03-25---
+
+HTML --
+What is markup language?
+why it is called markup language
+we all know hyper text it means hyper link 
+
+what is tag?
+it is something we write in <> sings
+the tag tells a web browser to display the text
+
+HTML tags are case insensitive.
+
+Save file using "" like "home.html"
+
+Browser interprets the HTML and ignores the errors in the html
+
+Empty tag:
+Tag that does not have an end tag.
+
+Container tag:
+Tag will start with <> and close </>.
+
+Comments: 
+<!-- /// -->
+<!-- something write here -->
+
+Block level tags: Block level elements it will start on new line
+Inline level tags: Inline level elements never begin on new lines
+
+Attributes:
+Inside tag we write color, size, face etc .
+face is also used to for font style.
+it will work on html4 not in hmtl5
+
+IDE: Intergrated Development Environment
+
+
+Hyperlink:
+<a href=""
+Intra page Hyperlink
+<a name=""
+
+img:
+usemap: The usemap attribute is added to the <img> tag and links it to a <map> element.
+The <map> element contains one or more <area> tags, each defining a clickable region within the image.
+
+---04-03-25---
+
+Table:
+collection of rows and columns,
+cellspacing means - space between two cells.
+cellpadding means - space between inside the cell.
+rowspan - It means add two cell data to one cell.
+valign -  It used to add the text wherever you want.
+
+Forms:
+Form tag is used to create controls on the page.
+&nbsp; - used to give space in html 
+
+frameset:
+The <frameset> element in HTML was used to divide a web page into multiple sections or frames
+
+
+---05-03-25---
+
+Frames1:  
+         __________________
+        |__________________|
+        |    |             | 
+        |    |             | 
+        |    |_____________|
+        |____|_____________|
+
+
+Frames
+ex1: 
+         __________________
+        |        |_________|              
+        |        |_________|              
+        |        |_________|             
+        |________|_________|            
+
+Div Tag:
+It is Block level element
+Takes the full width available by default.
+
+Span Tag:
+It is Inline level element
+Does not start on a new line and only takes as much width as its content.
+
+non semantic tags: div and Span
+
+semantic tags:
+A semantic element clearly describes its meaning to both. 
+semantic tagging is for machine not for humans
+Header
+Footer
+main
+article
+figure
+figcaption
+nav
+section
+
+command - for Beautify  code --Shift + Alt + F
+
+Task: hmtl5
+        _________________
+       |_________________|
+       |_________________|
+       |         |       |
+       |_________|       |
+       |         |       |
+       |_________|_______|
+       |_________________|
+
+Use- Frameset and , Header, nav, section, article, aside, Footer
+
+
+
+Forms:
+vaildation
+need required
+autocomplete =off
+autofocus - it means to focus particular filed ex: when we open webiste it show fill the details which one you selected
+formaction - to submit the data to that form
+
+
+ 
+---06-03-25---
+
+novalidate - attribute is a boolean attribute
+formnovalidate- No need to write anything in fields
+Disabled - we cannot take focus
+         - The value of a disabled field is not submitted with the form.
+         - When you want to prevent user interaction with a form element based on a condition, like disabling a submit button until all fields are filled.
+
+readonly - 
+         - When you want to display data that users should see but not change, like a username or calculated values that need to be submitted.
+
+multiple - we can multiple email id at one fields ex: abc@gmail.com,ssd@gmail.com
+
+oninput - The oninput attribute in HTML is an event handler that triggers a JavaScript function or code every time the value of an input element changes.
+
+audio/video:
+
+autoplay - 
+controls -
+loop  - 
+muted - 
+
+CSS - Cascading style sheet
+
+        There are three main ways to include CSS:
+
+Inline CSS:-
+Definition: CSS styles are applied directly to HTML elements using the style attribute.
+Best For: Quick, one-time styles or testing.
+Drawback: Not reusable and makes the HTML cluttered.
+Ex:-
+<h1 style="color: blue; font-size: 24px;">Welcome to My Website!</h1>
+
+Internal CSS (Embedded CSS):-
+Definition: CSS is included within the <style> tag inside the <head> section of the HTML document.
+Best For: Styling a single HTML page.
+Drawback: Cannot be reused across multiple pages.
+Ex:-
+<head>
+    <title>Internal CSS Example</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+
+External CSS:-
+Definition: CSS is written in a separate .css file, which is linked to HTML using the <link> tag.
+Best For: Large websites with multiple pages.
+Drawback: Requires an additional file but keeps HTML clean and reusable.
+
+Ex:-
+<head>
+    <title>External CSS Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+style.css
+body {
+    background-color: #f0f0f0;
+}
+h1 {
+    color: red;
+}
+
+Note : we can use custom tag also in html and also we can apply css to that tag also.
+custom tag is not predefined tag user can create own tag.
+ex:
+<high> hello</high>
+
+high{
+        color: white;
+}
+
+text-align -
+text-indent - 
+text-decoration - 
+text-transform - all letter will be captialize ,uppercase,lowercase
+font-family -
+font-style - 
+font-size -
+background-image - 
+background-repeat - 
+
+Rule in anchor tag:
+a:visted
+a:link
+a:hover
+
+C:\Nagii Files\IT Bridge\Week3\Mar6\Links\link.html -copy path
+Week3\Mar6\Links\link.html --relavtive path
+
+---07-03-25---
+
+list-style-image:url(''); - to use bullet images
+We can give two tags at same time use css
+
+External Css : Maintainance
+Help us in reusing the style in other HTML Files
+The benfit is we can reuse that css file
+
+ ---CSS Selectors--- 
+COMMAND	                                    DESCRIPTION	                                                       SYNTAX
+
+UNIVERSAL SELECTOR	                The CSS universal selector (*) matches elements of any type.                 {}
+                                    When utilising @namespace, universal selectors
+                                    can be namespaced.	
+
+ID SELECTOR	                        The CSS ID selector matches an element based on the value of                 #id {}
+                                    the element’s id attribute. This is what you'd use to refer 
+                                    to that one-of-a-kind element with an id.	
+
+CLASS SELECTOR	                    The CSS class selector matches elements based on the contents               .class {}
+                                    of their class. 	
+
+TYPE SELECTOR	                    It selects all elements of the given type within a document.                h1, h2 ,h3 {}
+                                    In other words, the type selector in CSS matches components 
+                                    based on their node names.	
+
+ADJACENT SIBLING SELECTOR	        The adjacent sibling combinator (+) separates two selectors.                 h1 + p {}
+                                    It comes right after the first element, and they're both children  
+                                    of the same parent.	
+
+CHILD SELECTOR	                    The child combinator (>) is placed between two CSS selectors.	            ul > li {}
+
+GENERAL SIBLING SELECTOR	        Select all elements that follow the first element such that both            h1 ~ p {}
+                                    are children of the same parent.
+
+DESCENDANT SELECTOR	                Any selector with white space between two selectors without a               p a {}
+                                    combinator.	
+
+Declarations:
+
+    h1{ color : blue; font-style : 20px;}
+     |    |       |       |          |
+Selector  |       |       |          |
+     Property    value   Property    value
+                     
+
+                            ---10-03-25---
+Javascript : Javascript is a synchronous single-threaded language.
+             - Synchronous : Execute code in a order it finish one command then move to next.
+             - Single-Thread: It execute one line at a time.
+It is used for client side validation.
+
+Everything in Javascript happens inside an "Execution Context".
+
+The execution Context have two Components in it.
+ i) Memory ii) Code
+
+        |-----------------------------------------------------------------------------------|
+        |         Memory                                |                   Code            |
+        |-----------------------------------------------------------------------------------|
+        | All variable and functions are stored here    |  The code is executed one line at |
+        | as key:value.                                 |   time.                           |
+        | Ex : a =10;                                   |                                   |
+        |                                               |                                   |
+        | var i = 10 -- It is global scope              | Here it will perform and give code|
+        | square() {...}                                | To back.                          |
+        |                                               | Here again will create execution  |
+        | AddTwoNumber() {....}                         | context for functions and let and |
+        |                                               | const                             |
+        | CubeSquare() { ....}                          |  -------------    --------------  |
+        |                                               | |Memory| Code |   |Memory|code |  |
+        |                                               | |      |      |   |      |     |  |
+        |                                               | |      |      |   |      |     |  |
+        |                                               | ---------------   --------------  |
+        |                                               |     square         CubeSquare     |
+        |                                               |                                   |
+        |                                               |                                   |
+        |                                               |                                   |
+        |-----------------------------------------------------------------------------------|
+                                        Execution Context
+
+<<<Hoisting>>>
+Acessing the variable and function before their declarations or initialization is called Hoisting in Js"
+
+Hoisting in JavaScript is the behavior where variable and function declarations are moved to the top of their scope before execution.
+Note:
+Hoisting in JavaScript moves function declarations and variable declarations (but not their assignments) to the top of their scope before execution.
+
+Variable Declarations (var) are Hoisted but not Assigned
+console.log(x);  // ✅ Undefined (not an error)
+var x = 10;
+console.log(x);  // ✅ 10
+
+
+
+
+
+
+Javascript is a lossely typed language or weakly typed language.
+
+    -It means It does not attach the date types with the variables any date type can be stored in a vavable without declaring the  data type.If then later data type can be stored in the same variable later on.so, Js is a flexible it automatically assigns the data types to the variable
+Ex:
+    i = 10;           - Here we declare integer to the variable  of i 
+    i = "Bnr";        - Here we assign again string to the variable of i 
+
+
+<<<errors in Js:>>>
+Reference Error: When Js Engine tries to find out a specific variable inside the memory space & you cannot access it.
+
+Syntax Error : When their is some missing syntax(like missing declaration in case of const or redeclare let variable inside the same scope with same name) or undefined syntax.
+
+Type Error : When you assign a different type value to a different type variable. Ex: If you reassign a value to a const variable.
+
+
+strict variable : const>let>var
+
+
+<<<Arrays>>>
+The array is a collection of data items of the same type. In simple terms, it is a variable that
+contains multiple values.
+
+Syntax: var fruit = ["element1", "element2", "element3"];
+
+Another syntax:   var cities = new Array();             ---Useful for dynamically sized arrays
+        cities[0] = "Andhra";
+        cities[1] = "Tirupati";
+        cities[2] = "Kadapa";
+        cities[3] = "Chittor";
+
+---Method:---
+
+concat                  Joins two or more arrays together.                                      concat()
+
+indexOf                 Returns the index of the specified item from the array                  indexOf()
+
+join                    Converts the array elements to a string                                 join()
+
+pop                     Deletes the last element of the array.                                  pop()
+
+reverse                 This method reverses the order of the array elements.                   reverse()
+
+sort                    Sorts the array elements in a specified manner.                         sort()
+
+toString                Converts the array elements to a string.                                toString()
+
+valueOf                 returns the relevant Number Object holding the value of                 valueOf()
+                        the argument passed
+
+<<<String>>>
+The string is a sequence of characters that is used for storing and managing text data.
+
+---Method:---
+
+charAt                Returns the character from the specified index.                            str.charAt(3)
+
+concat                Joins two or more strings together.                                       str1.concat(str2)
+
+index of              Returns the index of the first occurrence of the specified                str.indexOf('substr')
+                      character from the string else -1 if not found.
+
+match                 Searches a string for a match against a regular expression.               str.match(/(chapter \d+(\.\d)*)/i;)
+
+replace               Searches a string for a match against a specified string or               str1.replace(str2)
+                      char and returns a new string by replacing the specified values.
+
+search                Searches a string against a specified value.                              str.search('term')
+
+split                 Splits a string into an array consisting of substrings                    str.split('\n')
+
+substring             Returns a substring of a string containing characters from the            str.substring(0,5)
+                      specified indices.
+                      We can start at one postion onwards Ex: Nagarjuna                         str.substring(3)  -- it will arjuna
+
+tolowercase           To convert string lowercase or uppercase letters                          str.tolowercase() 
+touppercase                                                                                     str.touppercase()
+
+
+
+---11-03-25---
+
+<<<Functions:>>>
+A function in JavaScript is a reusable block of code designed to perform a specific task when called.
+
+Whenever a function is called in the JavaScript, a new local execution context is created in two phases.
+i) Memory allocation     ii)code Execution are stored on local memory
+
+Global Scope:  All the code(var & fn()) which are not inside any other function is called global scope.
+
+EX:
+    var x =10;                                                  Here :- var x & fn abc is a global scope
+    function abc(){                                                         var y & and fn cba are not in global scope
+        var y =11;
+        function cba(){
+
+        }
+    }
+
+Undefined ::  Undefined is special keyword used as a placeholder to allocate some memory for the variables in the memory
+              allocation phase.
+              Undefined is used as a placeholder in the memory to a variable until the value is not  Assigned to that variable
+
+NotDefied :: when there is no memory is allocated for a varibale & we try access it.
+
+
+
+
+
+---12-03-25---
+
+Activity 1 : Words check (idiots, fools, incompetent)                           
+Activity 2 : City Temperatures (Pune , Bangalore, chennai)                            
+Activity 3 : Guess Game
+
+---13-03-25---
+
+keywords:-                            
+Break;
+Continue
+global variables
+local variables
+
+---14-03-25---
+
+Fn +  F12 -- To open developer tool like console                           
+onmouseover: 
+onmouseleave:
+getelementbyid:
+
+
+To get exact day in Number
+let today = new Date();
+let date = today.getDate(); /// to get the day like today mar/14/2025  -- we will get 14
+console.log(date);
+
+getFullYear() → Returns the year (e.g., 2025)
+
+getMonth() → Returns the month (0-11, January is 0)
+
+getDate() → Returns the day of the month (1-31)
+
+getDay() → Returns the day of the week (0 = Sunday, 6 = Saturday)
+
+getHours() → Returns the hour (0-23)
+
+getMinutes() → Returns the minutes (0-59)
+
+getSeconds() → Returns the seconds (0-59)
+
+getMilliseconds() → Returns milliseconds (0-999)
+
+getTime() → Returns the timestamp (milliseconds since Jan 1, 1970)
+
+
+Activity : icic Ui Creation and validation
+Activity1 : age calculator
+
+
+<<<Assignment:>>>
+The electricity bill has to be paid before the 5th of every month. 
+Write java script code that will prompt the user to enter the bill number and credit card number 
+(assume that the site has secure payment gateway).  
+If the date user pays the bill beyond 5th but before end of the month,
+then a fine of Rs. 50 is added for each delayed day.  
+  Compute the final bill and pop up the result to the user.
+Example:+
+If payng the bill on 4th  Feb --------
+(Prompt)Enter the bill amount : 8700
+Either : Your total bill is : 8700	- 4th  Feb 
+If the current date is :25th Feb then the output should be :
+Or : Your total bill after late fees is : 9750 	- 25th	 Feb 
+
+
+
+---17/03/25---
+
+oninput – Triggers whenever the input value changes.
+          Example: As you type in a text box, it fires continuously.
+
+onclick – Fires when an element is clicked.
+          Use case: Button clicks, toggling UI elements, etc.        
+
+onblur – Fires when an element loses focus (you click away or tab out).
+         Use case: Validate a field after the user finishes typing.
+
+onfocus – Fires when an element gains focus (you click or tab into it).  
+          Use case: Highlight the input or show a tip (e.g., "Enter your email").
+
+      
+Feature                 	innerHTML   	innerText	    textContent
+Supports HTML tags	          Yes	             No	             No
+Reads hidden text	 No (visible only)	 No (visible only)	 Yes (all text)
+Performance	             Slower (parses)	    Faster	        Fastest
+
+
+Button process -
+
+Activity :  CalculateEMI
+Activity1 : UserForm
+
+
+---18/03/25---
+
+onkeypress – Triggers when a key producing a printable character is pressed (deprecated in modern browsers).
+            Example: Typing 'A' triggers it, but pressing 'Shift' won't.
+onkeydown – Fires when any key is pressed down (including special keys like Shift, Enter, or Backspace).
+            Happens before the key actually appears on the screen.
+onkeyup – Fires when a key is released after being pressed.
+          Great for checking the final input after typing.
+
+rule: 
+    down>press>up
+
+Onchange-
+Fires when the value of an input changes — but only after the user moves away (loses focus).
+
+Feature	                    onchange            	            onblur
+When it fires	        Only if value changes	                Always when losing focus
+Input types	        Works on text, select, textarea	            Works on any input element
+Common use      	Track user changes (e.g., dropdowns)	    Validate or clean up input after focus moves
+
+If we set value = Nag 
+if it clear and write Nag it will perform onchnage when it perform is when value changed
+
+
+Activity :
+
+Create three textboxes like below :
+Pincode 	:	[560029	]
+District	:	[	    ]
+State	    :	[   	]
+560029	- Bangalore , Karnataka
+500011	- Hyderabad, Telanaga
+
+
+---19/03/25---
+
+In JavaScript, the this keyword refers to an object.
+
+
+Activity :
+
+Create Guessing game using .. this keyword
+You can guess three numbers at a time (1-10)
+Correct Answer : 5
+Number 1: 	[2	]
+Number 2:	[3	]
+Number 3:	[5	]
+[Play]
+Red color
+Case 1: You lost the game. Your selection of [2,8,9] doesn't match with correct answer : 3
+Green Color
+Case 2: Congratulations, you won the game your answer matches with correct answer : 5
+
+---20/03/25---
+
+Option - to add 
+       - to delete
+
+eval - 
+
+
+
+Activity:
+
+Problem statement :
+There is a admin page to add loan type in a drop down.
+When the admin log in , the drop down will have three loan type, home,car and personal
+Create one text box to enter more loan type like gold, education , vehicle loan
+Expected Output
+Add Loan Type 	:	[ Gold	]	Add
+Loan Type 	:	Drop Down [ Home, Car ,Personal,Gold ]
+Loan Type Number 	: 	4
+Red Color : Gold loan already present
+Green Color : Gold loan added successfully.
+
+
+
+---21/03/25---
+
+Cookies: 
+getCookie() fetches the counter value from cookies.
+setCookie() stores the counter value with an expiration (default is 30 days).
+
+
+Activity :
+Create two buttons like below 
+
+Counter : 1001
+[Increment]	[Decrement]
+1) Increment button should increase counter by 1 
+2) Decrement button should decrease counter by 1 
+** 3) counter should start from where we left even if we close the browser
+
+
+---24-03-25----
+
+Recap: 
+This Keyword:
+this.form.<idName>
+
+---25-03-25----
+
+Type Converison:-
+Here are two kinds of type conversions:
+Explicit conversion (You do it manually)
+Implicit conversion (JavaScript does it automatically)
+
+
+Explicit-
+let num = 123;
+console.log(String(num)); // "123"
+console.log(num.toString()); // "123"
+let str = "456";
+console.log(Number(str)); // 456
+
+Implicit-
+console.log("5" + 2);  // "52" (number becomes string)
+console.log("5" - 2);  // 3 (string becomes number)
+console.log("5" * 2);  // 10
+console.log("5" / 2);  // 2.5
+
+
+Regular expression:
+A regular expression is a pattern used to match character combinations in strings.
+
+Common Flags-
+g — Global search (find all matches, not just the first).
+i — Case insensitive.
+m — Multi-line mode.
+
+Basic Patterns-
+. — Matches any single character.
+\d — Matches digits (0-9).
+\w — Matches alphanumeric characters (A-Z, a-z, 0-9, and _).
+\s — Matches whitespace.
+^ — Matches the start of a string.
+$ — Matches the end of a string.
+
+Quantifiers-
++ — One or more times.
+* — Zero or more times.
+? — Optional (0 or 1 time).
+{n} — Exactly n times.
+{n,} — At least n times.
+{n,m} — Between n and m times.
+
+
+---26-03-25----
+Recap conversions
+
+try and catch
+
+Task: 
+Exception Handling in JavaScript
+Num1: [100]
+Num2: [50]
+divide
+Result of 100 divide by 50 is : 2
+
+
+----02-04-25----
+OnSubmit - 
+custom Objects
+
+Activity: Create Product Custom object in javascript to store productid, productname and price.
+Display the product information at the click of the button
+
+
+Activity1 : 
+Create Inventory class with following properties:
+
+All items price is 100INR
+
+OrderId     [ 12      ]
+OrderDate   [   12/12/12    ]
+ItemName    [  Rolex Watch     ]
+Quantity    [  9     ]
+
+                Buy
+
+following Methods
+
+CheckStatus
+CalculateBill
+Expected Output  :  Rolex Watch is out of stock
+Expected Output  :  Your Rolex Watch order successfully placed/ Your Order amount is:  900
+
+---03-04-25---
+
+
+---04-04-25---
+HTML5 and Css3
+
+New Feature and non semantic tags
+semantic element clearly describes that tags are uderstand and both browser and developer
+semantic tags - Header footer aside section footer
+
+div and span is non semantic elements 
+
+Action -  it will go along with data to the login page
+
+Formaction - it will go along with data to the new user
+
+localStorage : 
+- Available even after the browser is closed
+- Around 5-10MB per domain
+- Yes, data is shared across tabs/windows of the same origin
+
+SessionStorage : 
+- Available only during the session
+- Data is deleted when the tab or browser is closed
+- Around 5MB per domain
+Both localStorage and sessionStorage are part of the Web Storage API and allow you to store data in the browser.
+
+---05-04-25---
+Drag images to one div to Another
+
+demobuttons
+Geolocations 
+Maps - using api 
+steps to create api key - 
+    - go to google cloud
+     - create Project
+     - Go to Api & services
+     -  click Create credentials and click api key 
+     - and copy the key and paste it in your url 
+
+---07-04-25---
+Css3
+
+Hemisphere 
+
+border-radius : top-left, top-right, bottom-right, bottom-left
+
+text-shadow: h-shadow v-shadow blur-radius color;
+-  h-shadow: Horizontal shadow (positive → right, negative → left)
+-  v-shadow: Vertical shadow (positive → down, negative → up)
+-  blur-radius (optional): Amount of blur (higher = more blur)
+-  color: The color of the shadow
+
+
+TTF stands for TrueType Font.
+It's a font format developed by Apple and Microsoft and is one of the most common font formats on both Windows and macOS.
+
+If you’re going to host a website for production:
+Use .woff or .woff2 for better browser support and performance
+
+
+transform lets you apply 2D or 3D transformations to an element like:
+translate() – Move
+scale() – Resize
+rotate() – Rotate
+skew() – Slant
+matrix() – Combine all in one
+
+Syntax: transform: function(value);
+
+Function	                What it does	                Example
+
+translate()             	Moves element	                translate(50px, 100px)
+scale()	                    Scales up/down	                scale(1.5)
+rotate()	                Rotates (in deg)	            rotate(45deg)
+skew()	                    Skews the element	            skew(10deg, 20deg)
+matrix()	                Complex transform	            (Advanced)
+
+Media Query:
+A media query lets you apply CSS styles based on the device’s screen size, resolution, orientation, and more.
+
+
+Media Query Breakpoints:
+
+vDevice Type	            Breakpoint Range
+Mobile devices	            320px – 480px
+Tablets (iPads)         	481px – 768px
+Small laptops	            769px – 1024px
+Desktops	                1025px – 1200px
+Large screens	            1201px and above
+
+five main types of selectors in CSS
+Universal Selector   --            * — Selects all elements.
+Type Selector (Element Selector)   -- Selects elements by tag name.
+Class Selector  --  Selects elements with a specific class (use .).
+ID Selector -- Selects a single element with a specific ID (use #).
+Attribute Selector -- Selects elements based on attributes and their values.
+
+
+---08-04-25---
+Bootstrap:
+
+for images
+img-fluid	    Makes the image responsive
+d-block     	Display as block on all screens by default
+d-md-none	    Hide the image on medium screens and above (≥768px)
+
+
+---09-04-25---
+Node Js:-
+Module Exports: 
+
+console.log(process.argv); in Node.js:
+This line prints the command-line arguments passed when you run your Node.js program.
+process is a global object in Node.js.
+argv stands for Argument Vector — it's an array of command-line arguments.
+
+console.log(process.env); in Node.js
+This line prints all the environment variables available in your current system and Node.js environment.
+Environment variables are key-value pairs used to configure your application without hardcoding sensitive data or settings.
+
+
+Activity:
+write a simple Node.js program which will get todays date and print the days left  till 31st december of that year
+Expected Ouput:
+User enter in terminal: node file.js 12 3 2026
+days left left till 31st december 2026 : 220
+
+const day = parseInt(process.argv[2]);   // '12' → 12 (day)
+const month = parseInt(process.argv[3]); // '3' → 3 (month)
+const year = parseInt(process.argv[4]);  // '2026' → 2026 (year)
+
+
+[
+  'C:\\Program Files\\nodejs\\node.exe',  // [0] -> path to Node.js
+  'C:\\Path\\to\\your\\app.js',           // [1] -> path to your script
+  '12',                                   // [2] -> 1st user input: day
+  '3',                                    // [3] -> 2nd user input: month
+  '2026'                                  // [4] -> 3rd user input: year
+]
+
+
+---10-04-25---
+Activity: http://localhost9898/ should display blogs
+reads context from blog.text and display it in browser
+
+
+Res.write();
+Res.writeHead();
+
+res.writeHead(statusCode, headers)
+200 - It Means Everythingwent well
+{ 'Content-Type': 'text/plain' }
+                'text/plain' → Show it as plain text
+                'text/html' → Treat it like an HTML page
+                'application/json' → Treat it like JSON data
+
+Imagine a waiter in a restaurant. This waiter is:
+
+Single-threaded: only one waiter (Node.js) to take orders and serve food.
+
+Very efficient: he doesn’t wait for the chef (slow tasks like database, file I/O).
+
+Instead, he takes your order → passes it to the kitchen → goes to the next customer.
+
+When the food is ready, the kitchen notifies him, and he serves it.
+
+Components in this analogy:
+Restaurant	Node.js Equivalent
+Waiter	Node.js main thread
+Kitchen staff	Background workers (libuv, OS)
+Customer request	Incoming HTTP request
+Food ready alert	Callback/event loop
+
+---11-04-25---
+
+Streams:
+
+
+
+Express JS:-
+Express Js is a nodejs framework .
+Express is a web application framework that provides you  with a  simple API to build websites .
+
+Real-Time Analogy for Express:-
+Think of Express like a waiter in a restaurant:
+The customer (browser) makes a request (asks for food).
+The waiter (Express) takes the request to the kitchen (your server logic).
+The waiter brings back the food (response) to the customer.
+
+Route definition takes the following structure:
+		app.METHOD(PATH, HANDLER)
+Where:
+app is an instance of express.
+METHOD is an HTTP request method, in lowercase.
+PATH is a path on the server.
+HANDLER is the function executed when the route is matched.
+
+The most commonly used HTTP methods POST, GET, PUT, PATCH, DELETE are similar to CURD (create, update, read, delete) operations in the database. 
+GET:
+Get method is used to retrieve or get the information from the given server using a given URL. In REST CURD, it performs the read operation.
+POST:
+The Post Method is used for sending data to the server such as uploading a file or transferring some data or adding a new row to the back end table to any kind of web form. In a simple sentence, we can say that the post method is used for inserting new items in the backend server. In REST CRUD operation it performs the create operation.
+
+
+
+
+----12-04-25---
+The JSON.parse() method takes a string that is formatted in JSON (JavaScript Object Notation) and converts it into a JavaScript object.
+Activites are done in class go through the Files
+
+
+----14-04-25----
+The .map() method is used to transform each item in an array and return a new array with the transformed items.
+It does not change the original array. It returns a new array.
+
+
+Activity :
+Display all the visitors with same name.
+
+----15-04-25----
+----16-04-25----
+----17-04-25----
+----18-04-25----
+----19-04-25----
+----21-04-25----
+----22-04-25----

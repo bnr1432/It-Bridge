@@ -1,0 +1,268 @@
+                                                ---17/03/25---
+oninput – Triggers whenever the input value changes.
+          Example: As you type in a text box, it fires continuously.
+
+onclick – Fires when an element is clicked.
+          Use case: Button clicks, toggling UI elements, etc.        
+
+onblur – Fires when an element loses focus (you click away or tab out).
+         Use case: Validate a field after the user finishes typing.
+
+onfocus – Fires when an element gains focus (you click or tab into it).  
+          Use case: Highlight the input or show a tip (e.g., "Enter your email").
+
+      
+Feature                 	innerHTML   	innerText	    textContent
+Supports HTML tags	          Yes	             No	             No
+Reads hidden text	 No (visible only)	 No (visible only)	 Yes (all text)
+Performance	             Slower (parses)	    Faster	        Fastest
+
+Button process -
+
+Activity :  CalculateEMI
+Activity1 : UserForm
+
+
+
+                                                ---18/03/25---
+onkeypress – Triggers when a key producing a printable character is pressed (deprecated in modern browsers).
+            Example: Typing 'A' triggers it, but pressing 'Shift' won't.
+onkeydown – Fires when any key is pressed down (including special keys like Shift, Enter, or Backspace).
+            Happens before the key actually appears on the screen.
+onkeyup – Fires when a key is released after being pressed.
+          Great for checking the final input after typing.
+
+rule: 
+    down>press>up
+
+Onchange-
+Fires when the value of an input changes — but only after the user moves away (loses focus).
+
+Feature	                    onchange            	            onblur
+When it fires	        Only if value changes	                Always when losing focus
+Input types	        Works on text, select, textarea	            Works on any input element
+Common use      	Track user changes (e.g., dropdowns)	    Validate or clean up input after focus moves
+
+If we set value = Nag 
+ if it clear and write Nag it will perform onchnage when it perform is when value changed
+
+Activity :
+Activity : Create three textboxes like below :
+
+Pincode 	:	[560029	]
+District	:	[	    ]
+State	    :	[   	]
+
+560029	- Bangalore , Karnataka
+500011	- Hyderabad, Telanaga
+
+
+                                                ---19/03/25---
+In JavaScript, the this keyword refers to an object
+
+Activity :
+Create Guessing game using .. this keyword
+
+You can guess three numbers at a time (1-10)
+
+Correct Answer : 5
+
+Number 1: 	[2	]
+Number 2:	[3	]
+Number 3:	[5	]
+
+[Play]
+
+Red color
+Case 1: You lost the game. Your selection of [2,8,9] doesn't match with correct answer : 3
+
+Green Color
+Case 2: Congratulations, you won the game your answer matches with correct answer : 5
+
+                                                ---20/03/25---
+Option - to add 
+       - to delete
+
+eval - 
+
+
+Activity:
+
+Problem statement :
+There is a admin page to add loan type in a drop down.
+
+When the admin log in , the drop down will have three loan type, home,car and personal
+
+Create one text box to enter more loan type like gold, education , vehicle loan
+
+Expected Output
+
+Add Loan Type 	:	[ Gold	]	Add
+Loan Type 	:	Drop Down [ Home, Car ,Personal,Gold ]
+
+Loan Type Number 	: 	4
+
+Red Color : Gold loan already present
+
+Green Color : Gold loan added successfully.
+
+
+
+                                                ---21/03/25---
+Cookies: 
+getCookie() fetches the counter value from cookies.
+setCookie() stores the counter value with an expiration (default is 30 days).
+
+
+
+
+
+Activity : Create two buttons like below 
+
+Counter : 1001
+
+[Increment]	[Decrement]
+
+1) Increment button should increase counter by 1 
+2) Decrement button should decrease counter by 1 
+** 3) counter should start from where we left even if we close the browser
+
+
+
+
+                                                ---22/03/25---                                                
+
+
+                                                ---17/03/25---
+oninput – Triggers whenever the input value changes.
+          Example: As you type in a text box, it fires continuously.
+
+onclick – Fires when an element is clicked.
+          Use case: Button clicks, toggling UI elements, etc.        
+
+onblur – Fires when an element loses focus (you click away or tab out).
+         Use case: Validate a field after the user finishes typing.
+
+onfocus – Fires when an element gains focus (you click or tab into it).  
+          Use case: Highlight the input or show a tip (e.g., "Enter your email").
+
+      
+Feature                 	innerHTML   	innerText	    textContent
+Supports HTML tags	          Yes	             No	             No
+Reads hidden text	 No (visible only)	 No (visible only)	 Yes (all text)
+Performance	             Slower (parses)	    Faster	        Fastest
+
+Button process -
+
+Activity :  CalculateEMI
+Activity1 : UserForm
+
+
+
+                                                ---18/03/25---
+onkeypress – Triggers when a key producing a printable character is pressed (deprecated in modern browsers).
+            Example: Typing 'A' triggers it, but pressing 'Shift' won't.
+onkeydown – Fires when any key is pressed down (including special keys like Shift, Enter, or Backspace).
+            Happens before the key actually appears on the screen.
+onkeyup – Fires when a key is released after being pressed.
+          Great for checking the final input after typing.
+
+rule: 
+    down>press>up
+
+Onchange-
+Fires when the value of an input changes — but only after the user moves away (loses focus).
+
+Feature	                    onchange            	            onblur
+When it fires	        Only if value changes	                Always when losing focus
+Input types	        Works on text, select, textarea	            Works on any input element
+Common use      	Track user changes (e.g., dropdowns)	    Validate or clean up input after focus moves
+
+If we set value = Nag 
+ if it clear and write Nag it will perform onchnage when it perform is when value changed
+
+Activity :
+Activity : Create three textboxes like below :
+
+Pincode 	:	[560029	]
+District	:	[	    ]
+State	    :	[   	]
+
+560029	- Bangalore , Karnataka
+500011	- Hyderabad, Telanaga
+
+
+                                                ---19/03/25---
+In JavaScript, the this keyword refers to an object
+
+Activity :
+Create Guessing game using .. this keyword
+
+You can guess three numbers at a time (1-10)
+
+Correct Answer : 5
+
+Number 1: 	[2	]
+Number 2:	[3	]
+Number 3:	[5	]
+
+[Play]
+
+Red color
+Case 1: You lost the game. Your selection of [2,8,9] doesn't match with correct answer : 3
+
+Green Color
+Case 2: Congratulations, you won the game your answer matches with correct answer : 5
+
+                                                ---20/03/25---
+Option - to add 
+       - to delete
+
+eval - 
+
+
+Activity:
+
+Problem statement :
+There is a admin page to add loan type in a drop down.
+
+When the admin log in , the drop down will have three loan type, home,car and personal
+
+Create one text box to enter more loan type like gold, education , vehicle loan
+
+Expected Output
+
+Add Loan Type 	:	[ Gold	]	Add
+Loan Type 	:	Drop Down [ Home, Car ,Personal,Gold ]
+
+Loan Type Number 	: 	4
+
+Red Color : Gold loan already present
+
+Green Color : Gold loan added successfully.
+
+
+
+                                                ---21/03/25---
+Cookies: 
+getCookie() fetches the counter value from cookies.
+setCookie() stores the counter value with an expiration (default is 30 days).
+
+
+
+
+
+Activity : Create two buttons like below 
+
+Counter : 1001
+
+[Increment]	[Decrement]
+
+1) Increment button should increase counter by 1 
+2) Decrement button should decrease counter by 1 
+** 3) counter should start from where we left even if we close the browser
+
+
+
+
+                                                ---22/0325---                                                                                                

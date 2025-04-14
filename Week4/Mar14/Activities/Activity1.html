@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Validate(){
+            var date = Number(document.getElementById("date").value)
+            var month = Number(document.getElementById("month").value) -1;
+            var year = Number(document.getElementById("year").value)
+
+            var today = new Date();
+            var dob = new Date(year,month,date);
+
+            // To calaculate year
+            age = today - dob;
+            var year1 = 1000 * 60 * 60 * 24 * 365;
+
+             alert(`Your age is : ${Math.floor(age/year1)}`)
+
+        }
+    </script>
+</head>
+<body>
+    <h2>Nagarjuna Age Calculator</h2>
+    <form action="">
+      Date:  <input type="text" name="date" id="date"><br>
+      Month:  <input type="text" name="month" id="month"><br>
+      Year:  <input type="text" name="year" id="year"><br>
+      <input type="button" value="Calculate Age" onclick="Validate()">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,225 @@
+                            ---10-03-25---
+Javascript : Javascript is a synchronous single-threaded language.
+             - Synchronous : Execute code in a order it finish one command then move to next.
+             - Single-Thread: It execute one line at a time.
+It is used for client side validation.
+
+Everything in Javascript happens inside an "Execution Context".
+
+The execution Context have two Components in it.
+ i) Memory ii) Code
+
+        |-----------------------------------------------------------------------------------|
+        |         Memory                                |                   Code            |
+        |-----------------------------------------------------------------------------------|
+        | All variable and functions are stored here    |  The code is executed one line at |
+        | as key:value.                                 |   time.                           |
+        | Ex : a =10;                                   |                                   |
+        |                                               |                                   |
+        | var i = 10 -- It is global scope              | Here it will perform and give code|
+        | square() {...}                                | To back.                          |
+        |                                               | Here again will create execution  |
+        | AddTwoNumber() {....}                         | context for functions and let and |
+        |                                               | const                             |
+        | CubeSquare() { ....}                          |  -------------    --------------  |
+        |                                               | |Memory| Code |   |Memory|code |  |
+        |                                               | |      |      |   |      |     |  |
+        |                                               | |      |      |   |      |     |  |
+        |                                               | ---------------   --------------  |
+        |                                               |     square         CubeSquare     |
+        |                                               |                                   |
+        |                                               |                                   |
+        |                                               |                                   |
+        |-----------------------------------------------------------------------------------|
+                                        Execution Context
+
+<<<Hoisting>>>
+Acessing the variable and function before their declarations or initialization is called Hoisting in Js"
+
+Hoisting in JavaScript is the behavior where variable and function declarations are moved to the top of their scope before execution.
+Note:
+Hoisting in JavaScript moves function declarations and variable declarations (but not their assignments) to the top of their scope before execution.
+
+Variable Declarations (var) are Hoisted but not Assigned
+console.log(x);  // ✅ Undefined (not an error)
+var x = 10;
+console.log(x);  // ✅ 10
+
+
+
+
+
+
+Javascript is a lossely typed language or weakly typed language.
+
+    -It means It does not attach the date types with the variables any date type can be stored in a vavable without declaring the  data type.If then later data type can be stored in the same variable later on.so, Js is a flexible it automatically assigns the data types to the variable
+Ex:
+    i = 10;           - Here we declare integer to the variable  of i 
+    i = "Bnr";        - Here we assign again string to the variable of i 
+
+
+<<<errors in Js:>>>
+
+Reference Error: When Js Engine tries to find out a specific variable inside the memory space & you cannot access it.
+
+Syntax Error : When their is some missing syntax(like missing declaration in case of const or redeclare let variable inside the same scope with same name) or undefined syntax.
+
+Type Error : When you assign a different type value to a different type variable. Ex: If you reassign a value to a const variable.
+
+strict variable : const>let>var
+
+
+<<<Arrays>>>
+The array is a collection of data items of the same type. In simple terms, it is a variable that
+contains multiple values.
+
+Syntax: var fruit = ["element1", "element2", "element3"];
+
+Another syntax:   var cities = new Array();             ---Useful for dynamically sized arrays
+        cities[0] = "Andhra";
+        cities[1] = "Tirupati";
+        cities[2] = "Kadapa";
+        cities[3] = "Chittor";
+
+---Method:---
+
+concat                  Joins two or more arrays together.                                      concat()
+
+indexOf                 Returns the index of the specified item from the array                  indexOf()
+
+join                    Converts the array elements to a string                                 join()
+
+pop                     Deletes the last element of the array.                                  pop()
+
+reverse                 This method reverses the order of the array elements.                   reverse()
+
+sort                    Sorts the array elements in a specified manner.                         sort()
+
+toString                Converts the array elements to a string.                                toString()
+
+valueOf                 returns the relevant Number Object holding the value of                 valueOf()
+                        the argument passed
+
+<<<String>>>
+The string is a sequence of characters that is used for storing and managing text data.
+
+---Method:---
+
+charAt                Returns the character from the specified index.                            str.charAt(3)
+
+concat                Joins two or more strings together.                                       str1.concat(str2)
+
+index of              Returns the index of the first occurrence of the specified                str.indexOf('substr')
+                      character from the string else -1 if not found.
+
+match                 Searches a string for a match against a regular expression.               str.match(/(chapter \d+(\.\d)*)/i;)
+
+replace               Searches a string for a match against a specified string or               str1.replace(str2)
+                      char and returns a new string by replacing the specified values.
+
+search                Searches a string against a specified value.                              str.search('term')
+
+split                 Splits a string into an array consisting of substrings                    str.split('\n')
+
+substring             Returns a substring of a string containing characters from the            str.substring(0,5)
+                      specified indices.
+                      We can start at one postion onwards Ex: Nagarjuna                         str.substring(3)  -- it will arjuna
+
+tolowercase           To convert string lowercase or uppercase letters                          str.tolowercase() 
+touppercase                                                                                     str.touppercase()
+
+
+
+                            ---11-03-25---
+
+<<<Functions:>>>
+A function in JavaScript is a reusable block of code designed to perform a specific task when called.
+
+Whenever a function is called in the JavaScript, a new local execution context is created in two phases.
+i) Memory allocation     ii)code Execution are stored on local memory
+
+Global Scope:  All the code(var & fn()) which are not inside any other function is called global scope.
+
+EX:
+    var x =10;                                                  Here :- var x & fn abc is a global scope
+    function abc(){                                                         var y & and fn cba are not in global scope
+        var y =11;
+        function cba(){
+
+        }
+    }
+
+Undefined ::  Undefined is special keyword used as a placeholder to allocate some memory for the variables in the memory
+              allocation phase.
+              Undefined is used as a placeholder in the memory to a variable until the value is not  Assigned to that variable
+
+NotDefied :: when there is no memory is allocated for a varibale & we try access it.
+
+
+
+
+
+                            ---12-03-25---
+Activity 1 : Words check (idiots, fools, incompetent)                           
+Activity 2 : City Temperatures (Pune , Bangalore, chennai)                            
+Activity 3 : Guess Game
+
+                            ---13-03-25---
+keywords:-                            
+Break;
+Continue
+global variables
+local variables
+
+                            ---14-03-25---
+
+Fn +  F12 -- To open developer tool like console                           
+onmouseover: 
+onmouseleave:
+getelementbyid:
+
+
+To get exact day in Number
+let today = new Date();
+let date = today.getDate(); /// to get the day like today mar/14/2025  -- we will get 14
+console.log(date);
+
+getFullYear() → Returns the year (e.g., 2025)
+
+getMonth() → Returns the month (0-11, January is 0)
+
+getDate() → Returns the day of the month (1-31)
+
+getDay() → Returns the day of the week (0 = Sunday, 6 = Saturday)
+
+getHours() → Returns the hour (0-23)
+
+getMinutes() → Returns the minutes (0-59)
+
+getSeconds() → Returns the seconds (0-59)
+
+getMilliseconds() → Returns milliseconds (0-999)
+
+getTime() → Returns the timestamp (milliseconds since Jan 1, 1970)
+
+
+Activity : icic Ui Creation and validation
+Activity1 : age calculator
+
+<<<Assignment:>>>
+The electricity bill has to be paid before the 5th of every month. 
+Write java script code that will prompt the user to enter the bill number and credit card number 
+(assume that the site has secure payment gateway).  
+If the date user pays the bill beyond 5th but before end of the month,
+then a fine of Rs. 50 is added for each delayed day.  
+  Compute the final bill and pop up the result to the user.
+Example:+
+If payng the bill on 4th  Feb --------
+(Prompt)Enter the bill amount : 8700
+Either : Your total bill is : 8700	- 4th  Feb 
+If the current date is :25th Feb then the output should be :
+Or : Your total bill after late fees is : 9750 	- 25th	 Feb 
+
+
+
+

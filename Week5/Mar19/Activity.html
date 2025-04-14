@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+                function PlayGame(num1,num2,num3){
+                    let ourRandomNumber = Math.floor(Math.random() * 10);
+
+                    let output = document.getElementById("result");
+
+                    if( Number(num1.value) == ourRandomNumber || Number(num2.value) == ourRandomNumber || Number(num3.value) == ourRandomNumber){
+                        output.innerHTML = `<font color = 'green' > Congratulations You won the game your answer matches with correct answer : ${ourRandomNumber}</font>`
+                    }
+                    else{
+                        output.innerHTML = `<font color = 'red'> You lost the game. Your selection [${num1.value}, ${num2.value}, ${num3.value}]doesn't match with correct answer : ${ourRandomNumber} </font>`
+                    }
+                }
+
+    </script>
+</head>
+<body>
+
+    <form action="">
+        Number1 : <input type="number" name="num1" id="num1"> <br>
+        Number2 : <input type="number" name="num2" id="num2"><br>
+        Number3 : <input type="number" name="num2" id="num3"><br>
+        <input type="button" value="PlayGame" onclick="PlayGame(this.form.num1, this.form.num2, this.form.num3)">
+    </form>
+    <div id="result"></div>
+   
+</body>
+</html>

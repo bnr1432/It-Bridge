@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <script>
+
+        function CalculateEmi() {
+            let principal = document.getElementById("principal");
+            let tenure = document.getElementById("tenure");
+            let interest = document.getElementById("interest");
+
+            if (principal.value == 0) {
+                document.getElementById("principalError").innerHTML = "<font color='red'>Please enter Principal amount</font>";
+                
+            }
+ 
+           else if (tenure.value.trim() == 0) {
+                document.getElementById("tenureError").innerHTML = "<font color='red'>Please enter Tenure</font>";
+               
+            }
+            
+           else if(interest.value  == 0) {
+                document.getElementById("interestError").innerHTML = "<font color='red'>Please enter Interest</font>";
+                
+            }
+        }
+
+        // Function to clear error when user focuses on the input field
+        function clearError(field) {
+            document.getElementById(field + "Error").innerHTML = "";
+        }
+    </script>
+</head>
+
+<body>
+    <h2>EMI Calculator</h2>
+    <form action="">
+
+         Principal: 
+        <input type="text" name="Principal" id="principal" onfocus="clearError('principal')">
+        <span id="principalError"></span> 
+        <br><br>
+
+         Tenure: 
+        <input type="text" name="Tenure" id="tenure" onfocus="clearError('tenure')">
+        <span id="tenureError"></span>
+        <br><br>
+
+         Interest: 
+        <input type="text" name="Interest" id="interest" onfocus="clearError('interest')">
+        <span id="interestError"></span>
+        <br><br>
+
+         <input type="button" value="Calculate EMI" onclick="CalculateEmi()">
+    </form>
+</body>
+</html>

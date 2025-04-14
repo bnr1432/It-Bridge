@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+
+    <script>
+        let count = localStorage.getItem("counter") ? Number(localStorage.getItem("counter")) : 1001;
+
+        function initializeCounter() {
+            document.getElementById("result").innerHTML = count;
+        }
+
+        function updateCounter(change) {
+            count += change;
+            document.getElementById("result").innerHTML = count;
+
+            localStorage.setItem("counter", count);
+        }
+    </script>
+</head>
+
+<body onload="initializeCounter()">
+
+    <form action="">
+        Counter: <span id="result"></span><br><br>
+
+        <input type="button" value="Increment(+)" id="incre" onclick="updateCounter(1)">
+        <input type="button" value="Decrement(-)" id="decre" onclick="updateCounter(-1)">
+    </form>
+
+</body>
+
+</html>

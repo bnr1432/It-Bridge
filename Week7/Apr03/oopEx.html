@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         class Review {
+            constructor(m_review_id, m_comments,m_star) {
+                this.review_id = m_review_id;
+                this.comments = m_comments;
+                this.star = m_star;
+            }
+            addReview(comments,star) {
+                return `Review Details are ${this.comments} , ${this.star}`
+            }
+        }
+       
+        Review.prototype.GetReview = function () {
+            return `Review Details is : ${this.review_id} , ${this.star}`
+        }
+
+        cust1 = new Review(110,"Good","3star");
+        alert(cust1.GetReview());
+        alert(cust1.addReview("Better" ,"2star"));
+
+    </script>
+        
+</head>
+<body>
+    
+</body>
+</html>

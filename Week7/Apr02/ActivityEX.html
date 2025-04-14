@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        function Product(m_id,m_name,m_price){
+            this.product_id = m_id;
+            this.product_name = m_name;
+            this.price = m_price;
+            this.calculate_price = CalculatePrice ;
+            this.get_product_name = ProductName;
+        }
+        function CalculatePrice (){
+            var total = this.price + (this.price/100 * 12);
+            return total;
+        }
+        function ProductName(){
+            return this.product_name.toUpperCase();
+        }
+        function display1(){
+            product1 = new Product(1001,"Lacto",223);
+            alert("Get Details:" + product1.get_product_name() + product1.calculate_price())
+        }
+    </script>
+<body>
+    <input type="button" value="display1" onclick="display1()">
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Events Demo</title>
+
+    <script>
+        function onKeyPressDemo(event) {
+            document.getElementById("keypress-result").innerText = `KeyPress: ${event.key}`;
+        }
+
+        function onKeyDownDemo(event) {
+            document.getElementById("keydown-result").innerText = `KeyDown: ${event.key}`;
+        }
+
+        function onKeyUpDemo(event) {
+            document.getElementById("keyup-result").innerText = `KeyUp: ${event.key}`;
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Key Events Demo</h2>
+    <p>Type something in the box below to see the event results:</p>
+
+    <input 
+        type="text" 
+        onkeypress="onKeyPressDemo(event)" 
+        onkeydown="onKeyDownDemo(event)" 
+        onkeyup="onKeyUpDemo(event)"
+        placeholder="Start typing...">
+
+    <div id="keypress-result"></div>
+    <div id="keydown-result"></div>
+    <div id="keyup-result"></div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getTemperature(cityname)
+        {
+            if(cityname.toLowerCase() == "pune"){
+                return 31;
+            }
+            else if(cityname.toLowerCase() == "bangalore"){
+                return 34;
+
+            }
+            else if( cityname.toLowerCase() == "chennai"){
+                return 35;
+            }
+            else{
+                // alert(`Invalid City You Enter`);
+                return;
+            }
+        }
+        function displayTemperature()
+        {
+	     var city = prompt("Please Enter City: ");
+         if(city == undefined){
+            return;
+         }
+
+         var temp = getTemperature(city);
+
+         if(temp == 31){
+            alert(`Pune temperature is 31' celcius`);
+         }
+         else if(temp == 34){
+            alert(`Bangalore temperature is 34' celcius`);
+
+         }
+         else if(temp == 35){
+            alert(`Chennai temperature is 35' celcius`);
+         }
+         else{
+            alert(`Invalid city you enter no temperature`)
+         }
+
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="CheckTemperature" onclick="displayTemperature()">
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <script>
+            function SearchProduct(){
+                var size = document.getElementById("size").value;
+                sessionStorage.setItem("size",size);
+                alert("Date is stored");
+            }
+
+            function getData(){
+                var size = sessionStorage.getItem("size");
+                document.getElementById("size").value = size;
+            }
+        
+        </script>
+</head>
+<body onload="getData()">
+
+    size: <input type="text" name="size" id="size">
+    <button value="Search" onclick="SearchProduct()">Search</button>
+    
+</body>
+</html>

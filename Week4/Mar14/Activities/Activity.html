@@ -1,0 +1,50 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Activity.css">
+    <script>
+         function validate() {
+            var uname = document.getElementById("account_name").value;
+            if (uname.length == 0) {
+                alert("Please enter your username")
+            }
+           else if ((uname.toUpperCase().startsWith('LB') || 
+                uname.toUpperCase().startsWith('TB') || 
+                uname.toUpperCase().startsWith('NH') || 
+                uname.toUpperCase().startsWith('LH')) && uname.length == 16) 
+            {
+                alert("Thanks for giving Account Number")
+            }
+            else{
+                alert(`Please enter 16 character Account starting with LB, TB,NH or LH `)
+            }
+           
+        }
+    </script>
+</head>
+<body>
+
+    <div class="one">
+        <div class="main">
+            <h2 id="head">Manage your Loan account</h2>
+        </div>
+     <div class="details">
+                <form action="">
+                    <h3>
+                        Enter Home Loan Account Number
+                    </h3>
+                    <p>
+                        Please enter your 16-character alphanumeric Loan Account Number*
+                    </p>
+                    <input type="text" name="acc" placeholder="Starts with LB, TB, NH or LH" id="account_name" class="display"><br><br>
+                    <input type="button" value="PROCEED" id="btn" onclick="validate()">
+                </form>
+    </div>
+
+</div>
+    
+</body>
+</html>

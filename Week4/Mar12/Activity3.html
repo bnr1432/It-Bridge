@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // function getRandomNumber() {
+        //     return Math.floor(Math.random() * 10);
+        // }
+        function guessingGame() {
+            // var ourRandomNumber = getRandomNumber();
+            var ourRandomNumber = Math.floor(Math.random() * 10);
+            alert("Random number generated :" + ourRandomNumber);
+
+            for (i = 1; i <= 3; i++) {
+                var num = prompt(`Enter the ${i} number `);
+                if (num == ourRandomNumber) {
+                    alert(`Congrats , you won, you guessed correctly : ${ourRandomNumber}`)
+                    break;
+                }
+                else {
+                    if (i == 3) {
+                        alert(`you lost the game the number was : ${ourRandomNumber}`)
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2> Guessing game</h2>
+    <h2>Click start to play the game</h2>
+    <h2>You have three chances to guess the number</h2>
+    <input type="button" value="Start Game" onclick="guessingGame()">
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: 1px solid black;
+            border-width:  2px 2px;
+            width: 300px;
+            height: 300px;
+            display: inline-block;
+        }
+        body{
+            display: flex;
+        }
+    </style>
+    <script>
+        function dragImage(env){
+            alert("Image Transfer" + env.target.id);
+
+        }
+        function display(env) {
+            alert(`Mouse clicked at X: ${env.clientX}, Y: ${env.clientY}`);
+        }
+
+        function Getvalue(event){
+            alert("Key Pressed: "+ event.key + " " + event.code )
+
+        }
+    </script>
+</head>
+<body>
+
+    <div>
+        <img id="prabhas" src="image.png" alt="" width="300" height="300" srcset="">
+        <input type="text" name="idtext" id="idtext" onkeypress="Getvalue(event)">
+    </div>
+    <div onclick="display(event)" id="helloId">
+    </div>
+    <div>
+
+    </div>
+    
+</body>
+</html>

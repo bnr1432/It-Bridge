@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+            greet1(); //  Works due to hoisting
+
+            function greet1() {
+                console.log("Hello, Nagarjuna!");
+            }
+
+            //A function can be stored in a variable.
+            //Hoisting does not apply (Cannot be used before declaration).
+            const greet = function() {
+            console.log("Hello, Nagarjuna!");
+            };
+
+            
+            greet();  // Function is called
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

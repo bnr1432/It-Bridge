@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <script>
+        function CalculateEmi() {
+            let m_principal = document.getElementById("Principal").value.trim();
+            let m_tenure = document.getElementById("Tenure").value.trim();
+            let m_interest = document.getElementById("Interest").value.trim();
+
+            let isValid = true;
+
+            if (m_principal === "" || isNaN(m_principal) || Number(m_principal) <= 0) {
+                document.getElementById("principal").innerHTML = "<font color='red'>Please enter a valid Principal amount</font>";
+                isValid = false;
+            } else {
+                document.getElementById("principal").innerHTML = "";
+            }
+
+            if (m_tenure === "" || isNaN(m_tenure) || Number(m_tenure) <= 0) {
+                document.getElementById("tenure").innerHTML = "<font color='red'>Please enter a valid Tenure (in months)</font>";
+                isValid = false;
+            } else {
+                document.getElementById("tenure").innerHTML = "";
+            }
+
+            if (m_interest === "" || isNaN(m_interest) || Number(m_interest) <= 0) {
+                document.getElementById("interest").innerHTML = "<font color='red'>Please enter a valid Interest rate</font>";
+                isValid = false;
+            } else {
+                document.getElementById("interest").innerHTML = "";
+            }
+
+            // Calculate EMI if inputs are valid
+            if (isValid) {
+                let P = Number(m_principal);
+                let n = Number(m_tenure);
+                let r = Number(m_interest) / 12 / 100;
+
+                let EMI = (P * r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+
+                EMI = EMI.toFixed(2); // Round off to 2 decimals
+
+                document.getElementById("result").innerHTML = `<h3>Your Monthly EMI is: ₹${EMI}</h3>`;
+            } else {
+                document.getElementById("result").innerHTML = "";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>EMI Calculator</h2>
+    <form action="javascript:void(0);">
+        Principal: <input type="text" name="Principal" id="Principal" oninput="CalculateEmi()"><span id="principal"></span><br><br>
+        Tenure (in months): <input type="text" name="Tenure" id="Tenure" oninput="CalculateEmi()"><span id="tenure"></span><br><br>
+        Interest Rate (% per annum): <input type="text" name="Interest" id="Interest" oninput="CalculateEmi()"><span id="interest"></span><br><br>
+
+        <input type="button" value="Calculate EMI" onclick="CalculateEmi()"><br><br>
+        <div id="result"></div>
+    </form>
+</body>
+</html>

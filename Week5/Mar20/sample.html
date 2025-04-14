@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function displayCities(Cities){
+            Cities.style.display = "block";
+            let apCities = new Array ("Tirupati","kadapa","chittor","Nellore");
+
+            for(i=0; i<apCities.length; i++){
+                option0 = new Option(apCities[i] ,apCities[i]);
+                Cities[i] = option0;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <center>
+            <h2>Online Credit card Application</h2>
+        </center>
+
+    State: <select name="state" id="state" onchange="displayCities(this.form.city)">
+            <option value="AP">Andhra Pradesh</option>
+            <option value="TN">Tamil Nadu</option>
+            <option value="KA">Karnataka</option>
+            <option value="TG">Telagana</option>
+    </select><br><br>
+    <input type="button" value="Show" onclick="displayCities(this.form.city)">  <br><br>
+
+   City:  <select style="display:none" name="city" id="city"  ></select>
+   
+</form>
+    
+</body>
+</html>

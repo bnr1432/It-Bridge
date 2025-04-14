@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pin Code Validator</title>
+    <script>
+        function Valid(pincode) {
+            // Updated regex: supports 6 digits OR 3-3 format
+            const regex = /^(\d{6}|\d{3}-\d{3})$/;
+
+            const result = regex.exec(pincode.value);  
+
+            const output = document.getElementById('output');
+            if (!result) {
+                output.innerHTML = "<font color='red'>Invalid Output</font>";
+            } else {
+                output.innerHTML = "<font color='green'>Valid Output</font>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Enter PIN Code:</h2>
+    <form action="">
+        <!-- Separate input for pincode and output message -->
+        <input type="text" name="pincode" id="pincode" placeholder="Enter PIN Code" onkeyup="Valid(this)">
+        <br><br>
+        <div id="output"></div> <!-- Output message displays here -->
+    </form>
+</body>
+</html>

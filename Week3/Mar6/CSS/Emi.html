@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: red;
+            border: 2px  solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h2>IT Bridge Bank</h2>
+    <form oninput="result.value = Number(num1.value) + Number(num2.value)+Number(num3.value)">
+        Principal :<input type="number" name="num1" id="num1" placeholder="Principal" required><br><br>
+        Tenure:<input type="number" name="num2" id="num2" placeholder="Tenure" required><br><br>
+        Interest Rate:<input type="number" name="num3" id="num3" placeholder="Interest Rate" required><br><br>
+        Bank Name:<input type="Text" name="bname" id="bname" placeholder="Bank Name" value="ICICI Bank" readonly><br><br><br>
+        <input type="submit" value="Calculate EMI">
+        <input type="reset" value="Reset values"><br>
+         EMI is = <output name="result"></output>
+    </form>
+    </center>
+    
+</body>
+</html>

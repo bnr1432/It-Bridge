@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function AddOption(inputcity , selectcity){
+            let length = selectcity.length;
+            for( i=0; i < length; i++){
+                if(selectcity[i].value == inputcity.value){
+                    alert(`City is alreay : ${inputcity.value}`)
+                    return;
+                }
+            }
+            let option = new Option(inputcity.value, inputcity.value);
+            selectcity[length] = option;
+        }
+
+        function RemoveOption(inputcity, selectcity){
+            let length = selectcity.length;
+            for( i=0; i < length; i++){
+                if(selectcity[i].value == inputcity.value){
+                    selectcity[i] = null;
+                    break;
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+    
+    <form action="">
+        City To Add : <input type="text" name="cityadd" id="cityadd" onblur="AddOption(this, this.form.city)"><br><br>
+        City To Remove : <input type="text" name="cityremove" id="cityremove" onblur="RemoveOption(this, this.form.city)"><br><br>
+            Cities : <select name="city" id="city">
+                        <option value="bangalore">Bangalore</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="pune">Pune</option>
+                        <option value="hyderabad">Hyderabad</option>
+                      </select>
+    </form>
+</body>
+</html>

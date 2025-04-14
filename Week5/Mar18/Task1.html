@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function process(name) {
+            var result = document.getElementById("result");
+            var index = document.getElementById('comm').options.selectedIndex;
+
+            if(index == 0){
+                result.innerHTML = `<font color = 'red'> Please select one option from the drop down menu`
+            }
+            else{
+                result.innerHTML = ` <font color = 'green'> You selected ${document.getElementById('comm').options[index].text} `;
+            }
+        }
+    </script>
+</head>
+<body>
+    Communication : 
+    <select name="comm" id="comm" onchange="process('Nothing')">
+        <option value="0">---select---</option>
+        <option value="1">Email</option>
+        <option value="2">SMS</option>
+        <option value="3">Phone</option>
+        <option value="4">Post</option>
+    </select>
+    <div id="result">
+
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo GetSelectOptionData</title>
+</head>
+<body>
+    <form name="demoForm">
+        Communication : 
+        <select name="demoSelect" onchange="showData()">
+            <option value="0">---select ---</option>
+            <option value="1">Email</option>
+            <option value="2">SMS</option>
+            <option value="3">Phone</option>
+            <option value="4">Post</option>
+
+        </select>
+    </form>
+
+    <p id="firstP">&nbsp;</p>
+    <p id="secondP">&nbsp;</p>
+    <p id="thirdP">&nbsp;</p>
+
+    <script>
+        function showData() {
+            var theSelect = demoForm.demoSelect;
+
+            var firstP = document.getElementById('firstP');
+            var secondP = document.getElementById('secondP');
+            var thirdP = document.getElementById('thirdP');
+
+            firstP.innerHTML = ('This option\'s index number is: ' + theSelect.selectedindex);
+            secondP.innerHTML = ('Its value is: ' + theSelect[theSelect.selectedindex].value);
+            thirdP.innerHTML = ('Its text is: ' + theSelect[theSelect.selectedindex].text);
+        }
+    </script>
+</body>
+</html> -->

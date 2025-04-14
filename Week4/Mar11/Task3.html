@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        function Calculator(num1,num2,name){
+            if(num1 == undefined || num2 ==undefined || name ==undefined ){
+                alert("Please Provide Numbers");
+                return;
+            }
+
+            // switch (name.toLowerCase()) {
+            //     case "add":
+            //         alert("Add  Two Number :" + (num1 + num2));
+            //         break;
+            //     case "sub":
+            //     alert("Add  Two Number :" + (num1 - num2));
+            //         break;
+            //     case "mul":
+            //     alert("Add  Two Number :" + (num1 * num2));
+            //         break;
+            //     case "div":
+            //     alert("Add  Two Number :" + (num1 / num2));
+            //         break;
+            //     default:
+            //     alert("Operation Invalid" + name);
+            //         break;
+            // }
+
+           
+            if(name.toLowerCase() == "add"){
+                alert("Add Two Number :" + (num1 + num2));
+             }
+            else if(name.toLowerCase() == "sub"){
+                alert("Sub Two Number :" + (num1 - num2));
+            }
+             else if(name.toLowerCase() == "mul"){
+                alert("Mul Two Number :" + (num1 * num2));
+            }
+             else if(name.toLowerCase() == "div"){
+                alert("Div Two Number :" + (num1 / num2));
+            }
+            else{
+                alert("Operation Invalid" + name);
+                
+            }
+           
+        }
+    </script>
+</head>
+<body>
+
+    <input type="button" value="Add" onclick="Calculator(2,4,'add')"><br>
+    <input type="button" value="Div" onclick="Calculator(10,5,'div')"><br>
+    <input type="button" value="Mul" onclick="Calculator(7,4,'Mul')"><br>
+    <input type="button" value="Sub" onclick="Calculator(2,4,'Sub')"><br>
+    <input type="button" value="Any" onclick="Calculator(2,5,'hello')"><br>
+
+
+    
+</body>
+</html>

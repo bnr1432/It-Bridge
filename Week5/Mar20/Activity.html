@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function AddLoanType(inputloan,loantype){
+
+            let length = loantype.length;
+            let add = document.getElementById("loanAdd");
+            let index = document.getElementById("number");
+
+            for( i=0; i < length; i++){
+                if(loantype[i].value == inputloan.value){
+                     add.innerHTML = `<font color='red'> ${inputloan.value} loan Already Added `;
+                        return;
+                }
+            }
+            
+            let option = new Option(inputloan.value, inputloan.value);
+            loantype[length] = option;
+            add.innerHTML = `<font color='Green'> ${inputloan.value} loan Added  Successfully`;
+            index.innerHTML = `${Number(length)}`
+
+        }
+    </script>
+</head>
+<body>
+
+    <form action="">
+
+        Add Loan Type : <input type="text" name="loantype" id="loantype" onblur="AddLoanType(this,this.form.loan)"><span id="loanAdd"></span><br>
+        <input type="button" value="Add"><br><br>
+        Loan Type : <select name="loan" id="loan">
+            <option value="Home">Home</option>
+            <option value="Car">Car</option>
+            <option value="Personal">Personal</option>
+        </select><br>
+        Loan Type Number : <span id="number"></span>
+    </form>
+    
+</body>
+</html>

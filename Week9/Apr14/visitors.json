@@ -1,0 +1,62 @@
+[
+  {
+    "visitorID": 1,
+    "visitorName": "Amit Sharma",
+    "visitorNumber": "9876543210",
+    "visitorPurpose": "Client Meeting"
+  },
+  {
+    "visitorID": 2,
+    "visitorName": "Neha Patel",
+    "visitorNumber": "9123456780",
+    "visitorPurpose": "Job Interview"
+  },
+  {
+    "visitorID": 3,
+    "visitorName": "Ravi Kumar",
+    "visitorNumber": "9988776655",
+    "visitorPurpose": "Delivery"
+  },
+  {
+    "visitorID": 4,
+    "visitorName": "Priya Singh",
+    "visitorNumber": "9090909090",
+    "visitorPurpose": "Training Session"
+  },
+  {
+    "visitorID": 5,
+    "visitorName": "Anil Mehta",
+    "visitorNumber": "9911223344",
+    "visitorPurpose": "Vendor Visit"
+  },
+  {
+    "visitorID": 6,
+    "visitorName": "Sneha Iyer",
+    "visitorNumber": "9812345678",
+    "visitorPurpose": "Consultation"
+  },
+  {
+    "visitorID": 7,
+    "visitorName": "Vikram Reddy",
+    "visitorNumber": "9001122334",
+    "visitorPurpose": "Technical Support"
+  },
+  {
+    "visitorID": 8,
+    "visitorName": "Kavita Joshi",
+    "visitorNumber": "9321456789",
+    "visitorPurpose": "Workshop"
+  },
+  {
+    "visitorID": 9,
+    "visitorName": "Manoj Desai",
+    "visitorNumber": "9944556677",
+    "visitorPurpose": "Maintenance Work"
+  },
+  {
+    "visitorID": 10,
+    "visitorName": "Divya Nair",
+    "visitorNumber": "9100000000",
+    "visitorPurpose": "Office Tour"
+  }
+]

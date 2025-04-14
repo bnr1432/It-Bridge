@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var cities = new Array();
+        cities[0] = "Andhra";
+        cities[1] = "Tirupati";
+        cities[2] = "Kadapa";
+        cities[3] = "Chittor";
+
+            for(var i =0; i<cities.length; i++){
+                document.write(`<h2>${cities[0]}  At ${i}, is a ${cities[i+1]} </h2>`);
+            }
+
+            //For enchance loop
+            for(i in cities){
+                let cout = parseInt(i);
+                document.write(`<h2>${cities[0]} At ${parseInt(i)}, is a ${cities[cout+1]}</h2>`);
+
+            }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var total = 0;
+            function sum(){
+                y = 20;
+                var x =10;
+                 total = x + y;
+                return total;
+            }
+            function display(){
+                sum();
+                alert(y); // 
+                // alert(x); //  Not Defined
+                {
+                    var a =1;    // using var you can ascces inside a function but using let you can't access the varibale outside of scope
+                }
+                alert(a);
+            }
+    </script>
+</head>
+<body>
+        <script> display()</script>
+</body>
+</html>

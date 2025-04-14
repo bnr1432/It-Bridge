@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        ol{ 
+            list-style: url(cat.png);
+            list-style-type: lower-alpha;
+        }
+
+        /* This is type selector */
+        ol,ul{
+            color: aqua;
+        }
+
+        /* This is class  */
+        .apple{    
+            color: aqua;
+        }
+
+        /* This is class with particular tag  */
+        p.noone{
+            color: orange;
+        }
+
+        /* This is id selector using # notation to intialise */
+        #idselector{
+            color: chartreuse;
+        }
+
+        /* The adjacent sibling combinator (+) separates two selectors. */
+        h2 + p {
+            color: blue;
+            font-weight: bold;
+         }
+
+         
+
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+    </ol>
+    <ul>
+        <li>Hello</li>
+        <li>Hai</li>
+        <li>Yeah</li>
+    </ul>
+        <p class="noone">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum aliquid, rem esse, odit eos similique voluptatem incidunt, aliquam voluptas error tenetur voluptates minus vel. Ea esse excepturi magnam. Veniam, rem.</p>
+        <p class=" noone">Hello</p>
+        <p class="apple">Hiii</p>
+        <p class="apple"> Temeper</p>
+
+        <h1 id="idselector"> This is ID selector</h1>
+
+<h2>Title 1</h2>
+<p>This paragraph will not be styled.</p>
+
+<h2>Title 2</h2>
+<p>This paragraph will be styled.</p>
+
+<h2>Title 3</h2>
+<p>This paragraph will also be styled.</p>
+
+</body>
+</html>

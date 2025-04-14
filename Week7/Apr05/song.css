@@ -1,0 +1,24 @@
+.player {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 400px;
+  margin: 10px;
+}
+
+.song-list {
+  margin-top: 20px;
+}
+
+.song-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.song-list li {
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.song-list li:hover {
+  background-color: #f0f0f0;
+}

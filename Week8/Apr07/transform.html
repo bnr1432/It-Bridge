@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Transform Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: cornflowerblue;
+      margin: 20px;
+      transition: transform 3s ease;
+    }
+
+    .translate:hover {
+      transform: translate(50px, 50px);
+    }
+
+    .scale:hover {
+      transform: scale(1.5);
+    }
+
+    .rotate:hover {
+      transform: rotate(45deg);
+    }
+
+    .skew:hover {
+      transform: skew(15deg, 10deg);
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Transform Demo (Hover over boxes 👇)</h2>
+  <div class="container">
+    <div class="box translate">Translate</div>
+    <div class="box scale">Scale</div>
+    <div class="box rotate">Rotate</div>
+    <div class="box skew">Skew</div>
+  </div>
+
+</body>
+</html>

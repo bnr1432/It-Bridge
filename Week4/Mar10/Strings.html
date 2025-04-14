@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = "Nagarjuna";
+        var str1 = "Reddy";
+
+        //charAt
+        document.write("Returns the character from the specified index." +str.charAt(3)+`<br/>`);
+
+        //Concat
+        document.write("Joins two or more strings together :"+str + str1 +`<br/>`);
+        document.write("Joins two or more strings together :"+ str.concat(str1)+  `<br/>` );
+
+        //indexOf
+        // document.write("Returns the index of the first occurrence:"+ str.indexOf(str1)`<br/>`);
+
+        //match
+        document.write("Searches a string for a match:"+ str.match(/(chapter \d+(\.\d)*)/i) + `<br/>`);
+
+        //replace
+        document.write("Searches a string for a match against a specified"+ str.replace('badepalli') + `<br/>`);
+
+        //search
+        document.write(" Searches a string against a specified value"+ str1.search('Reddy') + `<br/>`);
+
+        //split
+        document.write(" Splits a string into an array consisting of substrings :"+ str.split('a') + `<br/>`);
+
+        //substing
+        document.write(" Returns a substring of a string containing characters :"+ str.substr(3) + `<br/>`);
+        document.write(" Returns a substring of a string containing characters :"+ str.substr(0 ,3) + `<br/>`);  // To print only with index values
+
+        //tolowecase /toUppercase
+        document.write("  To convert string lowercase or uppercase letters :"+ str.toLowerCase(str) + `<br/>`);
+        document.write("  To convert string lowercase or uppercase letters :"+ str1.toUpperCase(str1) + `<br/>`);
+
+
+
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
