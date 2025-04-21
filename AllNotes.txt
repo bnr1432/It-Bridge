@@ -1,10 +1,10 @@
-----17/02/25---
+Week1----17/02/25---
 Technical Independent on your skills
 
 Organ Donation Website
 
 
----18/02/25---
+Week1---18/02/25---
 Manage Requirements - Map of Territory
 
     Needs
@@ -45,31 +45,31 @@ Most of these are failure in Requirements documents
 
 from customer we need to ask their needs not their Requirements.
 
----19/02/25---
+Week2---19/02/25---
 
 
-----24-02-25---
+Week2----24-02-25---
 
 
----25-02-25---
+Week2----25-02-25---
 
----26-02-25---
-
-
-
----27-02-25---
+Week2--26-02-25---
 
 
 
----28-02-25---
+Week2---27-02-25---
+
+
+
+Week2---28-02-25---
 Learned about Email Etiqute
 Formal Email and Informal Email
 Basic of API
 
----29-02-25---
+Week2---29-02-25---
 
 
----03-03-25---
+Week3---03-03-25---
 
 HTML --
 What is markup language?
@@ -116,7 +116,7 @@ img:
 usemap: The usemap attribute is added to the <img> tag and links it to a <map> element.
 The <map> element contains one or more <area> tags, each defining a clickable region within the image.
 
----04-03-25---
+Week3---04-03-25---
 
 Table:
 collection of rows and columns,
@@ -133,7 +133,7 @@ frameset:
 The <frameset> element in HTML was used to divide a web page into multiple sections or frames
 
 
----05-03-25---
+Week3---05-03-25---
 
 Frames1:  
          __________________
@@ -199,7 +199,7 @@ formaction - to submit the data to that form
 
 
  
----06-03-25---
+Week3---06-03-25---
 
 novalidate - attribute is a boolean attribute
 formnovalidate- No need to write anything in fields
@@ -295,7 +295,7 @@ a:hover
 C:\Nagii Files\IT Bridge\Week3\Mar6\Links\link.html -copy path
 Week3\Mar6\Links\link.html --relavtive path
 
----07-03-25---
+Week3---07-03-25---
 
 list-style-image:url(''); - to use bullet images
 We can give two tags at same time use css
@@ -342,7 +342,7 @@ Selector  |       |       |          |
      Property    value   Property    value
                      
 
-                            ---10-03-25---
+Week4---10-03-25---
 Javascript : Javascript is a synchronous single-threaded language.
              - Synchronous : Execute code in a order it finish one command then move to next.
              - Single-Thread: It execute one line at a time.
@@ -474,7 +474,7 @@ touppercase                                                                     
 
 
 
----11-03-25---
+Week4---11-03-25---
 
 <<<Functions:>>>
 A function in JavaScript is a reusable block of code designed to perform a specific task when called.
@@ -503,13 +503,13 @@ NotDefied :: when there is no memory is allocated for a varibale & we try access
 
 
 
----12-03-25---
+Week4---12-03-25---
 
 Activity 1 : Words check (idiots, fools, incompetent)                           
 Activity 2 : City Temperatures (Pune , Bangalore, chennai)                            
 Activity 3 : Guess Game
 
----13-03-25---
+Week4---13-03-25---
 
 keywords:-                            
 Break;
@@ -517,7 +517,7 @@ Continue
 global variables
 local variables
 
----14-03-25---
+Week4---14-03-25---
 
 Fn +  F12 -- To open developer tool like console                           
 onmouseover: 
@@ -569,7 +569,7 @@ Or : Your total bill after late fees is : 9750 	- 25th	 Feb
 
 
 
----17/03/25---
+Week5---17/03/25---
 
 oninput – Triggers whenever the input value changes.
           Example: As you type in a text box, it fires continuously.
@@ -596,7 +596,7 @@ Activity :  CalculateEMI
 Activity1 : UserForm
 
 
----18/03/25---
+Week5---18/03/25---
 
 onkeypress – Triggers when a key producing a printable character is pressed (deprecated in modern browsers).
             Example: Typing 'A' triggers it, but pressing 'Shift' won't.
@@ -630,7 +630,7 @@ State	    :	[   	]
 500011	- Hyderabad, Telanaga
 
 
----19/03/25---
+Week5---19/03/25---
 
 In JavaScript, the this keyword refers to an object.
 
@@ -649,7 +649,7 @@ Case 1: You lost the game. Your selection of [2,8,9] doesn't match with correct 
 Green Color
 Case 2: Congratulations, you won the game your answer matches with correct answer : 5
 
----20/03/25---
+Week5---20/03/25---
 
 Option - to add 
        - to delete
@@ -673,7 +673,7 @@ Green Color : Gold loan added successfully.
 
 
 
----21/03/25---
+Week5---21/03/25---
 
 Cookies: 
 getCookie() fetches the counter value from cookies.
@@ -690,13 +690,13 @@ Counter : 1001
 ** 3) counter should start from where we left even if we close the browser
 
 
----24-03-25----
+Week6---24-03-25----
 
 Recap: 
 This Keyword:
 this.form.<idName>
 
----25-03-25----
+Week6---25-03-25----
 
 Type Converison:-
 Here are two kinds of type conversions:
@@ -743,7 +743,7 @@ Quantifiers-
 {n,m} — Between n and m times.
 
 
----26-03-25----
+Week6---26-03-25----
 Recap conversions
 
 try and catch
@@ -756,7 +756,7 @@ divide
 Result of 100 divide by 50 is : 2
 
 
-----02-04-25----
+Week7----02-04-25----
 OnSubmit - 
 custom Objects
 
@@ -783,10 +783,10 @@ CalculateBill
 Expected Output  :  Rolex Watch is out of stock
 Expected Output  :  Your Rolex Watch order successfully placed/ Your Order amount is:  900
 
----03-04-25---
+Week7---03-04-25---
 
 
----04-04-25---
+Week7---04-04-25---
 HTML5 and Css3
 
 New Feature and non semantic tags
@@ -810,7 +810,7 @@ SessionStorage :
 - Around 5MB per domain
 Both localStorage and sessionStorage are part of the Web Storage API and allow you to store data in the browser.
 
----05-04-25---
+Week7---05-04-25---
 Drag images to one div to Another
 
 demobuttons
@@ -823,7 +823,7 @@ steps to create api key -
      -  click Create credentials and click api key 
      - and copy the key and paste it in your url 
 
----07-04-25---
+Week8---07-04-25---
 Css3
 
 Hemisphere 
@@ -882,7 +882,7 @@ ID Selector -- Selects a single element with a specific ID (use #).
 Attribute Selector -- Selects elements based on attributes and their values.
 
 
----08-04-25---
+Week8---08-04-25---
 Bootstrap:
 
 for images
@@ -891,7 +891,7 @@ d-block     	Display as block on all screens by default
 d-md-none	    Hide the image on medium screens and above (≥768px)
 
 
----09-04-25---
+Week8---09-04-25---
 Node Js:-
 Module Exports: 
 
@@ -925,7 +925,7 @@ const year = parseInt(process.argv[4]);  // '2026' → 2026 (year)
 ]
 
 
----10-04-25---
+Week8---10-04-25---
 Activity: http://localhost9898/ should display blogs
 reads context from blog.text and display it in browser
 
@@ -957,11 +957,9 @@ Kitchen staff	Background workers (libuv, OS)
 Customer request	Incoming HTTP request
 Food ready alert	Callback/event loop
 
----11-04-25---
+Week8---11-04-25---
 
 Streams:
-
-
 
 Express JS:-
 Express Js is a nodejs framework .
@@ -988,14 +986,12 @@ POST:
 The Post Method is used for sending data to the server such as uploading a file or transferring some data or adding a new row to the back end table to any kind of web form. In a simple sentence, we can say that the post method is used for inserting new items in the backend server. In REST CRUD operation it performs the create operation.
 
 
-
-
-----12-04-25---
+Week8----12-04-25---
 The JSON.parse() method takes a string that is formatted in JSON (JavaScript Object Notation) and converts it into a JavaScript object.
 Activites are done in class go through the Files
 
 
-----14-04-25----
+Week9----14-04-25----
 The .map() method is used to transform each item in an array and return a new array with the transformed items.
 It does not change the original array. It returns a new array.
 
@@ -1003,10 +999,121 @@ It does not change the original array. It returns a new array.
 Activity :
 Display all the visitors with same name.
 
-----15-04-25----
-----16-04-25----
-----17-04-25----
-----18-04-25----
-----19-04-25----
-----21-04-25----
-----22-04-25----
+Week9----15-04-25----
+                                                            Reactjs
+React is a JavaScript library for building user interfaces.
+React is used to build single-page applications.
+
+A component is a reusable block of code that represents a part of the user interface (UI).
+A component is a JavaScript function or class that returns HTML (JSX) to be displayed on the screen.
+
+It is Component-based architecture.
+    -> Example: Flipkart
+        - Reusable Components:
+        - Each product is a ProductCard component.
+        - Cart is a Cart component.
+        - Navbar is a Navbar component.
+        - You just reuse them with different data. No code repetition.
+
+A Single Page Application (SPA) is a web app where:
+The entire app runs on a single HTML page.
+When you click buttons, go to other "pages", or perform actions — the page does NOT reload.
+Only parts of the page (components) update dynamically using JavaScript.
+
+React is needed when your application is interactive, dynamic, and needs frequent UI updates based on user actions or data.
+
+To setup the project:-
+Create A floder > and open it in terminal > go through below steps
+npx create-react-app my-app
+cd my-app
+<optional>  npm i web-vitals --save-dev
+npm start
+
+Now open chrome :- https://localhost:3000/
+
+
+npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+Web vitals:-
+Web Vitals are performance metrics provided by Google that help developers understand how fast, stable, and responsive their websites or apps are for real users.
+Real-Life Analogy
+Imagine you're opening a restaurant menu:
+LCP = How fast you get to see the main dishes.                                  -- Largest Contentful Paint      < 2.5s
+FID = How quickly the waiter responds when you point to a dish.                 -- First Input Delay	         < 100ms
+CLS = If the menu keeps jumping or shifting, it's annoying.                     -- Cumulative Layout Shift	     < 0.1
+
+React App Folder Structure:-
+    my-app/
+├── node_modules/                               -- Contains all the project dependencies.
+├── public/
+│   ├── index.html                              -- This is the single HTML page React will render everything inside.   / Single static HTML page
+│   └── favicon.ico
+├── src/
+│   ├── App.css                                 -- Styling for components.
+│   ├── App.js                                  --  Main component. You usually start editing here
+│   ├── App.test.js
+│   ├── index.css                               -- Styling for components.
+│   ├── index.js                                -- Entry point. It renders <App /> inside index.html.
+│   ├── logo.svg
+│   └── reportWebVitals.js
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock / package-lock.json
+
+
+Writing markup with JSX:
+The markup syntax you’ve seen above is called JSX.
+JSX is stricter than HTML. You have to close tags like <br />.
+Your component also can’t return multiple JSX tags. You have to wrap them into a shared parent, like a <div>...</div> or an empty <>...</> wrapper.
+
+Syntax:-
+    function AboutPage() {
+    return (
+        <>
+        <h1>About</h1>
+        <p>Hello there.<br />How do you do?</p>
+        </>
+     );
+    }
+
+Props : Props (short for properties) are how you pass data from one component to another, usually from parent to child.
+    Simple words - Like passing arguments to a function.
+
+Think of props like function arguments—they allow you to customize how a component behaves or what it displays.
+To call props  -- {props.variable }
+
+
+Stateless vs Statefull :-
+
+A stateless component (Presentational Component) is a component that doesn't manage any state. It simply takes props and returns JSX.
+    --  Think of it as a function that only displays data.
+
+A stateful component (Container Component) is a component that manages its own state using useState, useReducer, etc.
+    -- Think of it as a smart component that remembers things (like button clicks, input values, etc.).
+
+
+Week9----16-04-25----
+State:-
+The state is a built-in React object that is used to contain data or information about the component. whenever it changes, the component re-renders.
+In React class components, this.state is an object that holds data or UI state.
+
+ Using class property syntax to define state:-
+    state = {
+        text : "Save Visitor",
+    };
+
+
+
+Bind:-
+The arrow function automatically captures the context of this, so you don’t need to bind it.
+
+
+Week9----17-04-25----
+Week9----18-04-25----
+Week9----19-04-25----
+
+Week10----21-04-25----
+Week10----22-04-25----
